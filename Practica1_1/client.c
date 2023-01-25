@@ -19,6 +19,7 @@ guardando este valor en el contador de programa*/
 /*Planificador, sera el que decida que copia de dicho programa
  sera el que se siga ejecutando*/
 
+
 int main(int argc, char** argv) {
     
     int pid1,pid2;
