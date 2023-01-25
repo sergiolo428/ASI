@@ -1,4 +1,4 @@
-/*Sergio Lopez Alejandro - Practica1_1*/
+/*Sergio Lopez Alejandro - Practica1_1 */
 
 #include <stdio.h>
 #include <stdlib.h>
