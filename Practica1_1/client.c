@@ -28,18 +28,22 @@ int main(int argc, char** argv) {
     pid1=fork();
     if(pid1==-1){
         printf("Error creando Hijo 1.");
+        
     }else if(pid1==0){
         /*Soy el hijo1*/
         printf("Soy el hijo1 con ID: %d\n",getpid());
         _exit(0);
+        
     }else{
         pid2=fork();
         if(pid2==-1){
         printf("Error creando Hijo 2.");
+        
         }else if(pid2==0){
             /*Soy el hijo2*/
             printf("Soy el hijo2 con ID: %d\n",getpid());
             _exit(0);
+            
         }else{
             /*Soy el padre*/            
             wait(&status);
