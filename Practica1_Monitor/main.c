@@ -1,4 +1,4 @@
-/*Sergio Lopez Alejandro - Practica1_2 */
+/*Sergio Lopez Alejandro - Practica1_Monitor */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
         printf("Introduce el ejercicio a realizar: ");
         scanf("%d",&val);
         switch(val){
-            case 1:
+            case 1: de forma voluntaria el tr
                 printf("Ejercicio 1: \n");
                 break;
             case 2:
@@ -36,4 +36,3 @@ int main(int argc, char** argv) {
     }
     return (EXIT_SUCCESS);
 }
-

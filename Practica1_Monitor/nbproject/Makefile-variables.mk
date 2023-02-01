@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=practica1_2
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/practica1_2
+CND_ARTIFACT_NAME_Debug=practica1_monitor
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/practica1_monitor
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=practica12.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/practica12.tar
+CND_PACKAGE_NAME_Debug=practica1monitor.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/practica1monitor.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=practica1_2
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/practica1_2
+CND_ARTIFACT_NAME_Release=practica1_monitor
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/practica1_monitor
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=practica12.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/practica12.tar
+CND_PACKAGE_NAME_Release=practica1monitor.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/practica1monitor.tar
 #
 # include compiler specific variables
 #
