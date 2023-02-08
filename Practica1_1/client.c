@@ -33,6 +33,9 @@ guardando este valor en el contador de programa*/
 /*Planificador, sera el que decida que copia de dicho programa
  sera el que se siga ejecutando*/
 
+
+/*pthread_create(puntero ,NULL, funcion, paramatros de funcion)*/
+
 void handler(int);
 void mayus();
 void readSave();
