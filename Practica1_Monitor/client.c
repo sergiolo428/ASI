@@ -13,8 +13,7 @@ void *funcionHilo(void *arg);
 
 int main(int argc, char** argv) {
     int val;
-    int idm=atoi(argv[1]);
-    
+    int idm=atoi(argv[1]);    
     int pid1,pid2,status,i;
     
     pthread_t mythread;
@@ -31,17 +30,14 @@ int main(int argc, char** argv) {
                 exit(0);
                 break;
             case 2:
-                signal(SIGUSR2,handler);
-                sleep(1);
-                printf("Ejercicio 2: \n");
                 kill(idm,SIGUSR1);
-                printf("b");
+                signal(SIGUSR2,handler);
+                printf("Ejercicio 2: \n");
                 pause();
-                printf("a");
                 kill(idm,SIGUSR2);
+                exit(0);
                 break;
             case 3:
-                
                 
                 printf("Ejercicio 3: \n");
                 kill(idm,SIGUSR1);
@@ -88,6 +84,7 @@ int main(int argc, char** argv) {
                 }else{
                     /*Padre*/
                     sleep(25);
+                    kill(pid1,SIGKILL);
                     _exit(0);
                 }
                 break;
@@ -107,7 +104,7 @@ int main(int argc, char** argv) {
                     pid2=fork();
                     if(pid2==0){
                         /*Hijo2*/
-                        printf("SOy el Hijo 2: %d.\n",getpid());
+                        printf("Soy el Hijo 2: %d.\n",getpid());
                         signal(SIGUSR1,handler);
                         pause();
                         printf("Comienzo.\n");
