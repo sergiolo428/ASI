@@ -5075,3 +5075,1064 @@ Recibida una señal no esperada.
 
 -------------------------------------------------------
 1675846009: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445370: COMMAND <cp ./monitor1 /tmp/.monitor1>
+1676445370: COMMAND <cp -f /tmp/.monitor1 ./monitor1>
+1676445370: COMMAND <uname -a >> .trazas-1/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+1676445370: COMMAND <ifconfig 2>&1 >> .trazas-1/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 7868  bytes 11233815 (11.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2628  bytes 233577 (233.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 222  bytes 21940 (21.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 222  bytes 21940 (21.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1676445370: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-1/alumno-78997795V>
+MACHINE-ID: 1676445370: COMMAND <cat /etc/machine-id >> .trazas-1/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1676445370: 
+La máquina está ya identificada.
+1676445370: RX: <OK Accepted>
+1676445372: TX: <CHECKPWD bmmNS3EF+5EHa->
+1676445372: RX: <OK>
+1676445372: 
+********************************************
+           INICIANDO SESION
+********************************************
+1676445372: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1676445372: RX: <REGISTERED>
+1676445372: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1676445372: COMMAND <cp ./client.? .trazas-1>
+1676445372: COMMAND <tar zcf save_file-78997795V .trazas-1 > /dev/null>
+1676445372: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-1\nput save_file-78997795V 78997795V-15-2-8h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1676445372: COMMAND <test -f .trazas-1/.clean_bck.tz && rm .trazas-1/.clean_bck.tz>
+1676445431: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1676445431: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4296  0.0  0.0   2772   948 pts/1    S+   08:17   0:00 ./client 4203
+ubuntu      4297  0.0  0.0   2888  1032 pts/0    S+   08:17   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4298  0.0  0.0  15360  3444 pts/0    R+   08:17   0:00 ps u
+1676445431: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445431: 
+Número de procesos cliente (1) inadecuado 
+1676445431: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1676445431: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445438: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1676445438: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4296  0.0  0.0   2772   948 pts/1    S+   08:17   0:00 ./client 4203
+ubuntu      4305  0.0  0.0   2772   100 pts/1    S+   08:17   0:00 ./client 4203
+ubuntu      4306  0.0  0.0   2888  1056 pts/0    S+   08:17   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4307  0.0  0.0  15360  3508 pts/0    R+   08:17   0:00 ps u
+1676445438: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445438: 
+:M> Enviamos <3> señales de lanzamiento de threads
+1676445441: COMMAND <ps -L 4305 >> .trazas-1/alumno-78997795V>
+    PID     LWP TTY      STAT   TIME COMMAND
+1676445441: COMMAND <ps --no-header -o thcount -p 4305 > .trazas-1/.n_cliente>
+1676445441: COMMAND <ps --no-header -o nlwp -p 4305 > .trazas-1/.n_cliente>
+1676445441: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <4>.
+*******************************************************
+1676445441: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1676445441: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1676445441: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445512: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1676445512: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4332  0.0  0.0   2772   940 pts/1    S+   08:18   0:00 ./client 4203
+ubuntu      4333  0.0  0.0   2772   100 pts/1    S+   08:18   0:00 ./client 4203
+ubuntu      4334  0.0  0.0   2888   984 pts/0    S+   08:18   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4335  0.0  0.0  15360  3536 pts/0    R+   08:18   0:00 ps u
+1676445512: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445512: 
+:M> Enviamos <3> señales de lanzamiento de threads
+1676445515: COMMAND <ps -L 4333 >> .trazas-1/alumno-78997795V>
+    PID     LWP TTY      STAT   TIME COMMAND
+   4333    4333 pts/1    Sl+    0:00 ./client 4203
+   4333    4340 pts/1    Sl+    0:00 ./client 4203
+   4333    4341 pts/1    Sl+    0:00 ./client 4203
+   4333    4343 pts/1    Sl+    0:00 ./client 4203
+1676445515: COMMAND <ps --no-header -o thcount -p 4333 > .trazas-1/.n_cliente>
+1676445515: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <4>.
+*******************************************************
+1676445515: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <609>.
+********************************************[0m
+1676445515: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1676445515: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445538: 
+Recibida una señal no esperada.
+1676445570: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445570: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4351  0.0  0.0   2888  1056 pts/0    S+   08:19   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4352  0.0  0.0  15360  3456 pts/0    R+   08:19   0:00 ps u
+1676445570: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445570: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445570: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445578: 
+Recibida una señal no esperada.
+1676445585: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445585: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4362  0.0  0.0   2888   960 pts/0    S+   08:19   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4363  0.0  0.0  15360  3512 pts/0    R+   08:19   0:00 ps u
+1676445585: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445585: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445585: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445591: 
+Recibida una señal no esperada.
+1676445605: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445605: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4374  0.0  0.0   2888  1004 pts/0    S+   08:20   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4375  0.0  0.0  15360  3460 pts/0    R+   08:20   0:00 ps u
+1676445605: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445605: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445605: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445614: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445614: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4382  0.0  0.0   2888   948 pts/0    S+   08:20   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4383  0.0  0.0  15360  3584 pts/0    R+   08:20   0:00 ps u
+1676445614: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445614: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445614: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445619: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445619: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4390  0.0  0.0   2888  1004 pts/0    S+   08:20   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4391  0.0  0.0  15360  3520 pts/0    R+   08:20   0:00 ps u
+1676445619: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445619: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445619: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445634: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445634: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4203  0.0  0.0   2872  2068 pts/0    S+   08:16   0:00 ./monitor1
+ubuntu      4398  0.0  0.0   2888   980 pts/0    S+   08:20   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4399  0.0  0.0  15360  1660 pts/0    R+   08:20   0:00 ps u
+1676445634: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445634: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676445634: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445645: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1676445645: COMMAND <cp ./client.? .trazas-1>
+1676445646: COMMAND <tar zcf save_file-78997795V .trazas-1 > /dev/null>
+1676445646: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-1\nput save_file-78997795V 78997795V-15-2-8h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1676445646: COMMAND <test -f .trazas-1/.clean_bck.tz && rm .trazas-1/.clean_bck.tz>
+1676445649: COMMAND <cp ./monitor1 /tmp/.monitor1>
+1676445649: COMMAND <cp -f /tmp/.monitor1 ./monitor1>
+1676445649: COMMAND <uname -a >> .trazas-1/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+1676445649: COMMAND <ifconfig 2>&1 >> .trazas-1/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 7931  bytes 11238729 (11.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2676  bytes 237018 (237.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 232  bytes 22834 (22.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 232  bytes 22834 (22.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1676445649: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-1/alumno-78997795V>
+MACHINE-ID: 1676445649: COMMAND <cat /etc/machine-id >> .trazas-1/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1676445649: 
+La máquina está ya identificada.
+1676445649: RX: <OK Accepted>
+1676445649: TX: <CHECKPWD bmmNS3EF+5EHa->
+1676445649: RX: <OK>
+1676445649: 
+********************************************
+           INICIANDO SESION
+********************************************
+1676445649: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1676445649: RX: <REGISTERED>
+1676445649: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1676445649: COMMAND <cp ./client.? .trazas-1>
+1676445649: COMMAND <tar zcf save_file-78997795V .trazas-1 > /dev/null>
+1676445649: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-1\nput save_file-78997795V 78997795V-15-2-8h20\n" | 	  ftp -n 2>&1 > /dev/null>
+1676445649: COMMAND <test -f .trazas-1/.clean_bck.tz && rm .trazas-1/.clean_bck.tz>
+1676445659: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1676445659: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu      4451  0.0  0.0   2772   944 pts/1    S+   08:20   0:00 ./client 4425
+ubuntu      4452  0.0  0.0   2772    96 pts/1    S+   08:20   0:00 ./client 4425
+ubuntu      4453  0.0  0.0   2888   980 pts/0    S+   08:20   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4454  0.0  0.0  15360  3576 pts/0    R+   08:20   0:00 ps u
+1676445659: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445659: 
+:M> Enviamos <3> señales de lanzamiento de threads
+1676445662: COMMAND <ps -L 4452 >> .trazas-1/alumno-78997795V>
+    PID     LWP TTY      STAT   TIME COMMAND
+   4452    4452 pts/1    Sl+    0:00 ./client 4425
+   4452    4459 pts/1    Sl+    0:00 ./client 4425
+   4452    4460 pts/1    Sl+    0:00 ./client 4425
+   4452    4461 pts/1    Sl+    0:00 ./client 4425
+1676445662: COMMAND <ps --no-header -o thcount -p 4452 > .trazas-1/.n_cliente>
+1676445662: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <4>.
+*******************************************************
+1676445662: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <609>.
+********************************************[0m
+1676445662: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1676445662: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445685: 
+Recibida una señal no esperada.
+1676445718: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1676445718: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu      4532  0.0  0.0   2772   924 pts/1    S+   08:21   0:00 ./client 4425
+ubuntu      4533  0.0  0.0   2772   100 pts/1    S+   08:21   0:00 ./client 4425
+ubuntu      4534  0.0  0.0   2888   984 pts/0    S+   08:21   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4535  0.0  0.0  15360  3508 pts/0    R+   08:21   0:00 ps u
+1676445718: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445718: 
+:M> Enviamos <3> señales de lanzamiento de threads
+1676445721: COMMAND <ps -L 4533 >> .trazas-1/alumno-78997795V>
+    PID     LWP TTY      STAT   TIME COMMAND
+   4533    4533 pts/1    Sl+    0:00 ./client 4425
+   4533    4540 pts/1    Sl+    0:00 ./client 4425
+   4533    4541 pts/1    Sl+    0:00 ./client 4425
+   4533    4543 pts/1    Sl+    0:00 ./client 4425
+1676445721: COMMAND <ps --no-header -o thcount -p 4533 > .trazas-1/.n_cliente>
+1676445721: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <4>.
+*******************************************************
+1676445721: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <609>.
+********************************************[0m
+1676445721: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1676445721: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445728: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676445728: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu      4532  0.0  0.0   2772   924 pts/1    S+   08:21   0:00 ./client 4425
+ubuntu      4533  0.0  0.0  27360   100 pts/1    Sl+  08:21   0:00 ./client 4425
+ubuntu      4549  0.0  0.0   2888  1052 pts/0    S+   08:22   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4550  0.0  0.0  15360  3504 pts/0    R+   08:22   0:00 ps u
+1676445728: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445728: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445734: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445740: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445744: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445746: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu      4638  0.0  0.0   2888   956 pts/0    S+   08:22   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu      4639  0.0  0.0  15360  3536 pts/0    R+   08:22   0:00 ps u
+1676445746: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1676445746: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445746: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <303>.
+********************************************[0m
+1676445746: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1676445746: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445781: 
+Recibida una señal no esperada.
+1676445790: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1676445790: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445792: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445792: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6136 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     12988  0.0  0.0   2772   956 pts/1    S+   08:23   0:00 ./client 4425
+ubuntu     12989  0.0  0.0   2888   952 pts/0    S+   08:23   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     12990  0.0  0.0  15360  3528 pts/0    R+   08:23   0:00 ps u
+1676445792: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1676445792: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445792: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <798>.
+********************************************[0m
+1676445792: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1676445792: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445799: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1676445799: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445799: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445803: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445874: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445901: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445901: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13031  0.0  0.0   2772   948 pts/1    S+   08:24   0:00 ./client 4425
+ubuntu     13032  0.0  0.0   2888   968 pts/0    S+   08:25   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13033  0.0  0.0  15360  3636 pts/0    R+   08:25   0:00 ps u
+1676445901: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1676445901: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445901: 
+Enviada la señal 12 al proceso 13031
+1676445901: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676445901: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <411>.
+********************************************[0m
+1676445901: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1676445901: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445902: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445910: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1676445910: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445914: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445914: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13042  0.0  0.0   2772   948 pts/1    S+   08:25   0:00 ./client 4425
+ubuntu     13043  0.0  0.0   2888   984 pts/0    S+   08:25   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13044  0.0  0.0  15360  3624 pts/0    R+   08:25   0:00 ps u
+1676445914: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445915: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445915: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13042  0.0  0.0   2772   948 pts/1    S+   08:25   0:00 ./client 4425
+ubuntu     13049  0.0  0.0   2772    96 pts/1    S+   08:25   0:00 ./client 4425
+ubuntu     13050  0.0  0.0   2772    96 pts/1    S+   08:25   0:00 ./client 4425
+ubuntu     13051  0.0  0.0   2888   952 pts/0    S+   08:25   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13052  0.0  0.0  15360  3648 pts/0    R+   08:25   0:00 ps u
+1676445915: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445915: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <3>.
+*******************************************************
+1676445915: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <956>.
+********************************************[0m
+1676445915: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1676445915: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676445932: 
+Recibida una señal no esperada.
+1676445949: INTENTO DE CONEXION DIA:15 MES:2 HORA:8:25m.
+1676445949: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1676445949: COMMAND <cp ./client.? .trazas-1>
+1676445949: COMMAND <tar zcf save_file-78997795V .trazas-1 > /dev/null>
+1676445949: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-1\nput save_file-78997795V 78997795V-15-2-8h25\n" | 	  ftp -n 2>&1 > /dev/null>
+1676445949: COMMAND <test -f .trazas-1/.clean_bck.tz && rm .trazas-1/.clean_bck.tz>
+1676445996: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1676445996: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676445999: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676445999: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13081  0.0  0.0   2772   924 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13082  0.0  0.0   2772    96 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13083  0.0  0.0   2772    96 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13084  0.0  0.0   2888   940 pts/0    S+   08:26   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13085  0.0  0.0  15360  3588 pts/0    R+   08:26   0:00 ps u
+1676445999: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676445999: 
+Enviada la señal 10 al proceso 13083
+1676445999: 
+Enviando un número aleatorio de señales tipo <12> al proceso cliente (13083)
+1676445999: 
+:M> Enviamos <6> señales SIGUSR2 para contar
+1676446003: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446007: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446011: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446015: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446019: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446023: 
+-------------------------------------------------------
+<== Recibida la señal 12 en el proceso monitor.
+
+-------------------------------------------------------
+1676446023: 
+Enviada la señal 10 al proceso 13083
+1676446023: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13081  0.0  0.0   2772   924 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13082  0.0  0.0   2772    96 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13083  0.0  0.0   2772    96 pts/1    S+   08:26   0:00 ./client 4425
+ubuntu     13090  0.0  0.0      0     0 pts/0    Z+   08:26   0:00 [monitor1] <defunct>
+ubuntu     13093  0.0  0.0   2888   960 pts/0    S+   08:27   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13094  0.0  0.0  15360  3580 pts/0    R+   08:27   0:00 ps u
+1676446023: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1676446023: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <818>.
+********************************************[0m
+1676446023: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1676446023: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446116: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446116: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13206  0.0  0.0   2888   956 pts/0    S+   08:28   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13207  0.0  0.0  15360  3588 pts/0    R+   08:28   0:00 ps u
+1676446116: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446116: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676446116: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446125: 
+Recibida una señal no esperada.
+1676446128: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446128: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13217  0.0  0.0   2888   988 pts/0    S+   08:28   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13218  0.0  0.0  15360  3572 pts/0    R+   08:28   0:00 ps u
+1676446128: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446128: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676446128: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446134: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446134: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13225  0.0  0.0   2888  1004 pts/0    S+   08:28   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13226  0.0  0.0  15360  3548 pts/0    R+   08:28   0:00 ps u
+1676446135: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446135: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676446135: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446159: 
+Recibida una señal no esperada.
+1676446161: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446161: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13248  0.0  0.0   2772   984 pts/1    S+   08:29   0:00 ./client 4425
+ubuntu     13249  0.0  0.0   2888  1060 pts/0    S+   08:29   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13250  0.0  0.0  15360  3572 pts/0    R+   08:29   0:00 ps u
+1676446161: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446161: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676446167: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676446169: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13255  0.0  0.0   2772  1044 pts/1    S+   08:29   0:00 ./client 4425
+ubuntu     13256  0.0  0.0   2888   984 pts/0    S+   08:29   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13257  0.0  0.0  15360  3564 pts/0    R+   08:29   0:00 ps u
+1676446169: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1676446169: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446169: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <6> .
+
+*************************************************[0m
+1676446169: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676446169: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446186: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446186: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13264  0.0  0.0   2888   956 pts/0    S+   08:29   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13265  0.0  0.0  15360  3580 pts/0    R+   08:29   0:00 ps u
+1676446186: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446186: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1676446186: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446197: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1676446197: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss   08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13272  0.0  0.0   2772   928 pts/1    S+   08:29   0:00 ./client 4425
+ubuntu     13273  0.0  0.0   2888   940 pts/0    S+   08:29   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13274  0.0  0.0  15360  3564 pts/0    R+   08:29   0:00 ps u
+1676446197: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446197: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (4425).
+
+-------------------------------------------------------
+1676446200: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1676446202: COMMAND <ps u >> .trazas-1/alumno-78997795V>
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu      1128  0.0  0.0 165180  6332 tty2     Ssl+ 07:56   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+ubuntu      1162  0.0  0.1 225820 15396 tty2     Sl+  07:56   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+ubuntu      4191  0.0  0.0  14016  5452 pts/0    Ss   08:15   0:00 bash
+ubuntu      4197  0.0  0.0  14444  6140 pts/1    Ss+  08:15   0:00 bash
+ubuntu      4425  0.0  0.0   2872  2204 pts/0    S+   08:20   0:00 ./monitor1
+ubuntu     13281  0.0  0.0   2888   964 pts/0    S+   08:30   0:00 sh -c ps u >> .trazas-1/alumno-78997795V
+ubuntu     13282  0.0  0.0  15360  3540 pts/0    R+   08:30   0:00 ps u
+1676446202: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1676446202: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1676446202: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <303>.
+********************************************[0m
+1676446202: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1676446202: COMMAND <who >> .trazas-1/alumno-78997795V>
+ubuntu   tty2         2023-02-15 07:56 (tty2)
+1676446238: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1676446238: COMMAND <cp ./client.? .trazas-1>
+1676446238: COMMAND <tar zcf save_file-78997795V .trazas-1 > /dev/null>
+1676446238: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-1\nput save_file-78997795V 78997795V-15-2-8h25\n" | 	  ftp -n 2>&1 > /dev/null>
+1676446238: COMMAND <test -f .trazas-1/.clean_bck.tz && rm .trazas-1/.clean_bck.tz>

@@ -1,0 +1,59 @@
+//--------------1--------------
+//Crear proceso
+pid=fork();
+
+//--------------2--------------
+//Diferenciar entre codigo del proceso padre y proceso hijo
+if(pid==0){
+	//Proceso Hijo
+}else{
+	//Proceso Padre
+	//*En caso de querer añadir mas hijos,
+	//Colocariamos un nuevo if en el padre
+}
+
+//--------------3--------------
+//Crear Thread
+void *funcionThread(void *arg);//Declaramos funcion thread antes del main
+
+pthread_t mythread;//Declaramos una variable pthread_t
+pthread_create(&mythread,NULL,funcionThread,&i);//Creamos el Thread
+
+//Creamos funcion del Thread
+void* funcionThread(void *args){
+	int i=*(int *)arg;//Obtenemos el valor i de input
+	printf("Soy el hilo %d.\n",i);
+	//Varias operaciones
+	pthread_exit(NULL);//Recordar salir del thread al terminar
+}
+
+//--------------4--------------
+//Ficheros
+
+//Variables
+FILE *f;
+char variableAEscribir[SIZE];
+char variableDondeGuardar[SIZE];
+
+//Crear ficherp
+f=fopen("file.txt","w");
+
+//Editar fichero
+fwrite(variableAEscribir,sizeof(char),strlen(variableAEscribir),f);
+
+//Leer fichero
+fread(variableDendeGuardar,sizeof(char),SIZE,f);
+
+//Cerrar fichero
+fclose(f);
+
+//--------------5--------------
+//Leer del teclado
+
+//Strings
+char frase[SIZE];
+fgets(frase,sizeof(frase),stdin);
+
+//Ints
+int val;
+scanf("%d",&val);

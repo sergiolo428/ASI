@@ -52,7 +52,6 @@ int main(int argc, char** argv) {
     }else if(pid1==0){
         /*-----Soy el hijo1-----*/
         
-        
         /*-----Hacemos signal y esperamos-----*/
         signal(SIGUSR1,handler);
         pause();

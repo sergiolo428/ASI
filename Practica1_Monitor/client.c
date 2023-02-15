@@ -11,6 +11,8 @@
 void handler(int);
 void *funcionHilo(void *arg);
 
+int threadTimer = 0;
+
 int main(int argc, char** argv) {
     int val;
     int idm=atoi(argv[1]);    
@@ -32,7 +34,7 @@ int main(int argc, char** argv) {
             case 2:
                 kill(idm,SIGUSR1);
                 signal(SIGUSR2,handler);
-                printf("Ejercicio 2: \n");
+                printf("Ejercicio 2: %d \n",getpid());
                 pause();
                 kill(idm,SIGUSR2);
                 exit(0);
@@ -66,10 +68,12 @@ int main(int argc, char** argv) {
                 
                 break;
             case 4:
+               /* 
+                //Try1
                 printf("Ejercicio 4: \n");
                 pid1=fork();
                 if(pid1==0){
-                    /*Hijo1*/
+                    //Hijo1
                     i=0;
                     signal(SIGUSR2,handler);
                     
@@ -77,15 +81,36 @@ int main(int argc, char** argv) {
                         pause();
                         i++;
                         printf("%d Señal\n",i);
-                        /*Creamos hilo*/
+                        //Creamos hilo
                         pthread_create(&mythread,NULL,funcionHilo,&i);
                     }
                     _exit(0);
                 }else{
-                    /*Padre*/
+                    //Padre
                     sleep(25);
                     kill(pid1,SIGKILL);
                     _exit(0);
+                }
+                break;
+                */
+                        
+                //Try2
+                printf("Ejercicio 4: \n");
+                pid1=fork();
+                if(pid1==0){
+                    //Hijo 1
+                    signal(SIGUSR2,handler);
+                    do{
+                        pause();
+                        if(threadTimer==0){
+                            pthread_create(&mythread,NULL,funcionHilo,&i);
+                        }
+                    }while(threadTimer==0);
+                }else{
+                    //Padre
+                    wait(&status);
+                    printf("Padre saliendo.\n");
+                    exit(0);
                 }
                 break;
             case 5:
@@ -153,10 +178,12 @@ void handlerexit(int n){
 void* funcionHilo(void *arg){
     int val=*(int *)arg;
     int a=0;
-    while(a<=1){
+    while(a<=3){
         printf("Soy el hilo %d.\n",val);
         sleep(5);
         a++;
     }
+    threadTimer=1;
+    kill(getpid(),SIGUSR2);
     pthread_exit(NULL);
 }
