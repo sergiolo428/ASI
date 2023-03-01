@@ -9,12 +9,15 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+
+#include <sys/msg.h>
+#include <ctype.h>
 /*
  --------------------NOTAS--------------------
  */
 /*
 
- * PIPES:
+ * --------------------------------PIPES-------------------------------------------
  * COnsiste en una tuberia dentro del sistema operativo, mediante la cual
  * los procesos se intercambian informacion
  * 
@@ -51,7 +54,7 @@
  * >> Debemos de crear este pipe(fd) en el proceso padre para que sea un recurso compartido por los hijos
  * 
  * 
- * 
+ * --------------------------------FIFO (Pipes con nombre)----------------------------------------------
  * PIPES CON NOMBRE (FIFO)
  * 
  * mkfifo("nombre",permisos (0666))
@@ -73,20 +76,64 @@
  * >>Los procesos en FIFO pueden ser de jerarquias diferentes
  * 
  *  
+ * 
+ * 
+ * -------------------------------------Colas de Mensajes--------------------------------
+ * 
+ * Ejercicio:
+ * 
+ * Proceso A coloca un mensaje en un "buzon" para que B despues obtenga
+ * el mensaje, lo ponga en mayusculas, coloque de nuevo en el buzon, A lo
+ * obtiene y lo imprime.
+ * 
+ * #define CLAVE 0x78997795L
+ * 
+ * struct Msg{
+ *      long tipo;
+ *      char mensaje[SIZE]
+ * };
+ * 
+ * Llamadas a sistema:
+ * 
+ * int idCola = msgget(CLAVE,IPC_CREAT) --> Creamos el buzon
+ * 
+ * struct Msg mensaje1;
+ * struct Msg mensaje2;
+ * 
+ * msgsnd(idCola,&mensaje1,strlen(mensaje1.mensaje),0) --> 0 el proceso se bloquea si el buzon esta lleno
+ * 
+ * msgrcv(idCola,&mensaje2,sizeof(),canal,0) --> El canal debera corresponder con el tipo que ha puesto el otro proceso en su estructura
+ * 
+ * --> Ese tipo equivale a un identificador el cual debes dar para que el buzon te de el mensaje correspondiente
+ * --> El 0 se utilizara para bloquera el proceso en caso de que la cola esta vacia
+ * 
+ * IMPORTANTE
+ * 
+ * En caso de qu emuchos procesos quieran comunicarse,
+ * pueden mandar por un canal 0 por ejemplo, un mensaje con una structurade
+ * long, int, msj, donde el int sera su pripio pid. Entonces a partir de ese emnsaje, los dos procesos
+ * pasarana comunicarse por el canal coincidente con ese pid.
+ * 
+ * 
+ * 
+ * 
  
 */
 /*
  ^^--------------------NOTAS--------------------^^
  */ 
 
-#define SIZE 128
 
-void funcionPipe();
-void funcionFifo();
+#define SIZE 128
+#define CLAVE 0x78997795L
+
+void funcionPipe();//Pipe sin nombre
+void funcionFifo();//Pipe con nombre
+void funcionColasMsg();
 
 int main(int argc, char** argv) {
         
-    funcionFifo();
+    funcionColasMsg();
     
     return (EXIT_SUCCESS);
 }
@@ -110,6 +157,7 @@ void funcionPipe(){
         //print de la frase
         printf("Mi frase es: %s.\n",buffer1);
         exit(0);
+        
     }else{
         pid2=fork();
         if(pid2==0){
@@ -172,6 +220,91 @@ void funcionFifo(){
             int status;
             wait(&status);
             close(fd);
+            exit(0);
+        }
+    }
+}
+
+// OJO, ESTA FUNCION TIENE ERRORRES
+void funcionColasMsg(){
+    
+    typedef struct msg{
+        long canal;
+        char texto[SIZE];
+    }Msg;
+    
+    int pid1,pid2;
+    
+    int idCola;
+    
+    idCola=msgget(CLAVE,0666|IPC_CREAT);
+    
+    pid1=fork();
+    if(pid1==0){
+        //Hijo1
+        char texto1[SIZE];
+        printf("Soy el Hijo 1.\n");
+        printf("Introduce tu frase: ");
+        fgets(texto1,SIZE,stdin);
+        
+        printf("test");
+        
+        
+        Msg mensaje1;
+        Msg mensaje11;
+        int canalLectura=1;
+        int canalEscritura=0;
+        
+        
+        
+        //Quitamos el salto de linea
+        if(texto1[strlen(texto1)-1]=='\n'){
+            texto1[strlen(texto1)-1]='\0';
+        }
+        printf("test1");
+        
+        strcpy(mensaje1.texto,texto1);
+        mensaje1.canal=canalEscritura;
+        printf("Hijo 1 manda: <%s> a Hijo 2.",mensaje1.texto);
+        
+        msgsnd(idCola,&mensaje1,sizeof(mensaje1.texto),0);
+        msgrcv(idCola,&mensaje11,sizeof(mensaje11.texto),canalLectura,0);
+        
+        printf("La frase es %s.",mensaje11.texto);
+        exit(0);
+        
+    }else{
+        pid2=fork();
+        if(pid2==0){
+            //Hijo2
+            printf("Soy el Hijo 2.\n");
+            Msg mensaje2;
+            int canalLectura=0;
+            int canalEscritura=1;
+            int i=0;
+            int val;
+            
+            msgrcv(idCola,&mensaje2,sizeof(mensaje2.texto),canalLectura,0);
+            printf("Hijo 2 obtiene: <%s> de Hijo 1.",mensaje2.texto);
+            
+            while(mensaje2.texto[i]!='\0'){
+                mensaje2.texto[i]=toupper(mensaje2.texto[i]);
+                i++;
+            }
+            
+            printf("Hijo 2 envia: <%s> a Hijo 1.",mensaje2.texto);
+            
+            mensaje2.canal=canalEscritura;
+            msgsnd(idCola,&mensaje2,strlen(mensaje2.texto),0);
+            exit(0);
+            
+        }else{
+            //Padre
+            int status;
+            printf("Soy el padre.\n");
+            wait(&status);
+            msgctl(idCola,IPC_RMID,NULL);
+            printf("Cola eliminada.\n");
             exit(0);
         }
     }
