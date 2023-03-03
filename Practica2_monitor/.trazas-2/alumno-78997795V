@@ -1,0 +1,1325 @@
+1677856792: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677856792: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677856792: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677856792: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.205  netmask 255.255.192.0  destination 10.254.27.205
+        inet6 fe80::ae88:2787:330a:4cb5  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::1bb2:6185:35fc:bde5  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 7571  bytes 6315864 (6.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6416  bytes 630794 (630.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 98909  bytes 138904099 (138.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 25087  bytes 2741018 (2.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 5909  bytes 2720565 (2.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5909  bytes 2720565 (2.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677856792: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677856792: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677856792: 
+La máquina está ya identificada.
+1677856792: RX: <OK Accepted>
+1677856794: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677856794: RX: <NEW>
+1677856794: 
+***************************************************
+El usuario no tiene un password público registrado.
+Por favor, confirme el password para darlo de alta.
+[5mEl password debe recordarlo para futuras sesiones.[0m
+Utilice una secuencia de caracteres personal privados.
+En el servidor se guardará una versión encriptada.
+Si no está de acuerdo con el password que ha utilizado
+interrumpa el proceso y comience de nuevo el registro.
+Posteriormente será más complicado modificarlo. Tendrá.
+que ponerse en contacto con el administrador:
+                 armando.ferro@ehu.eus
+***************************************************
+1677856799: TX: <CREATEPWD bmmNS3EF+5EHa->
+1677856799: [5m
+LOGIN: Registrado password público <bmmNS3EF+5EHa->.[0m
+1677856800: RX: <DONE>
+1677856800: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677856800: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677856800: RX: <REGISTERED>
+1677856800: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677856800: COMMAND <cp ./client.? .trazas-2>
+1677856800: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677856800: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-16h19\n" | 	  ftp -n 2>&1 > /dev/null>
+1677856801: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677856811: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677856811: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677856811: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677856811: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677856811: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:20 /tmp/fifo_monitor_1
+1677856811: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677856831: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1677856831: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677856845: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677856845: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677856845: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677856845: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677856845: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:20 /tmp/fifo_monitor_1
+1677856845: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677856847: 
+------------------------------------------------------------------
+Enviando secreto <1> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677856847: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1677856847: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677856938: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677856938: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677856938: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677856938: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677856938: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:22 /tmp/fifo_monitor_1
+1677856938: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677856943: 
+------------------------------------------------------------------
+Enviando secreto <1> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677856943: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1677856943: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677856946: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1677856946: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:22 /tmp/fifo_monitor_1
+1677856946: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+prw-rw-r-- 1 ubuntu ubuntu 0 mar  3 16:20 /tmp/fifo_monitor_2
+1677856946: 
+-------------------------------------------------------
+Existe el fifo </tmp/fifo_monitor_2>.
+Se procede a su borrado para esperar a su creación
+-------------------------------------------------------
+1677856946: COMMAND <rm -f /tmp/fifo_monitor_2>
+1677856946: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/fifo_monitor_2>.
+-------------------------------------------------------
+1677856946: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677856951: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677856957: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677856962: 
+-----------------------------------------------------------------------
+No se ha creado el dispositivo </tmp/fifo_monitor_2> para enviar mensajes al monitor.
+-----------------------------------------------------------------------
+1677856962: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1677856962: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677857039: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677857039: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677857039: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677857039: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677857039: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:23 /tmp/fifo_monitor_1
+1677857039: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677857044: 
+------------------------------------------------------------------
+Enviando secreto <1> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677857044: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1677857044: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677857049: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1677857049: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 16:24 /tmp/fifo_monitor_1
+1677857049: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677857049: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/fifo_monitor_2>.
+-------------------------------------------------------
+1677857049: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677857054: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+prw-rw-r-- 1 ubuntu ubuntu 0 mar  3 16:24 /tmp/fifo_monitor_2
+1677857054: 
+-------------------------------------------------------
+ MONITOR: Abriendo el dispositivo </tmp/fifo_monitor_2> para leer.
+-------------------------------------------------------
+1677857054: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <1> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677857054: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <139>.
+********************************************[0m
+1677857057: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677857057: 
+------------------------------------------------------------------
+Enviando secreto <2> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677857057: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <2> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677857057: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <580>.
+********************************************[0m
+1677857057: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1677857057: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677858339: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677858339: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677858339: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677858339: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677858339: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 0          ubuntu     666        0            0           
+
+1677858339: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677858339: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677858339: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 15:32 (tty2)
+1677863289: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677863289: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677863289: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677863289: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 29876  bytes 29391440 (29.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16006  bytes 3393524 (3.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 2741  bytes 322176 (322.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2741  bytes 322176 (322.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677863289: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677863289: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677863289: 
+La máquina está ya identificada.
+1677863289: RX: <OK Accepted>
+1677863291: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677863291: RX: <OK>
+1677863291: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677863291: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677863291: RX: <REGISTERED>
+1677863291: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677863291: COMMAND <cp ./client.? .trazas-2>
+1677863291: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677863291: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h08\n" | 	  ftp -n 2>&1 > /dev/null>
+1677863314: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677863319: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863319: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863319: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863319: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677863319: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 0          ubuntu     666        0            0           
+
+1677863319: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677863319: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863319: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863505: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863505: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 0          ubuntu     666        0            0           
+
+1677863505: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863505: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863510: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863510: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 0          ubuntu     666        6            1           
+
+1677863510: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863510: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863519: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677863519: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677863519: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863519: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863534: 
+-------------------------------------------------------
+No se ha creado la cola de mensajes con clave <0x78997795L> para hablar con el monitor
+-------------------------------------------------------
+1677863534: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 4.
+
+*************************************************[0m
+1677863534: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863592: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677863592: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677863592: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863592: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863607: 
+-------------------------------------------------------
+No se ha creado la cola de mensajes con clave <0x78997795L> para hablar con el monitor
+-------------------------------------------------------
+1677863607: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 4.
+
+*************************************************[0m
+1677863607: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863613: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863613: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863613: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863613: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677863613: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 3          ubuntu     666        0            0           
+
+1677863613: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677863613: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863613: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863614: INTENTO DE CONEXION DIA:3 MES:3 HORA:18:13m.
+1677863614: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677863614: COMMAND <cp ./client.? .trazas-2>
+1677863614: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677863614: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h13\n" | 	  ftp -n 2>&1 > /dev/null>
+1677863640: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677863641: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677863641: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677863641: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863641: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863656: 
+-------------------------------------------------------
+No se ha creado la cola de mensajes con clave <0x78997795L> para hablar con el monitor
+-------------------------------------------------------
+1677863656: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 4.
+
+*************************************************[0m
+1677863656: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863657: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863738: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863738: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863738: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863738: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677863738: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 5          ubuntu     666        0            0           
+
+1677863738: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677863738: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863738: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863743: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677863743: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677863743: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863743: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863748: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677863748: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677863749: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677863749: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677863749: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677863749: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863818: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863818: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863818: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863818: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863831: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863831: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 7          ubuntu     666        0            0           
+
+1677863831: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863831: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863849: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863849: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 7          ubuntu     666        0            0           
+
+1677863849: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863849: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863861: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863861: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 7          ubuntu     666        0            0           
+
+1677863862: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863862: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863870: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677863870: COMMAND <cp ./client.? .trazas-2>
+1677863870: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677863870: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h13\n" | 	  ftp -n 2>&1 > /dev/null>
+1677863890: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677863936: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677863936: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677863936: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677863936: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 30001  bytes 29404330 (29.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16117  bytes 3403027 (3.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 2801  bytes 327382 (327.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2801  bytes 327382 (327.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677863936: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677863936: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677863936: 
+La máquina está ya identificada.
+1677863936: RX: <OK Accepted>
+1677863936: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677863936: RX: <OK>
+1677863936: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677863936: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677863936: RX: <REGISTERED>
+1677863936: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677863936: COMMAND <cp ./client.? .trazas-2>
+1677863936: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677863936: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h18\n" | 	  ftp -n 2>&1 > /dev/null>
+1677863956: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677863969: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677863969: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 7          ubuntu     666        0            0           
+
+1677863969: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863969: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677863969: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 8          ubuntu     666        0            0           
+
+1677863969: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677863969: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677863969: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677863975: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677863975: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677863975: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677863975: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677863980: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677863980: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864000: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677864000: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677864000: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677864000: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864054: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864054: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 9          ubuntu     666        0            0           
+
+1677864054: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864054: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864060: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864060: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864060: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864060: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864075: 
+-------------------------------------------------------
+No se ha creado la cola de mensajes con clave <0x78997795L> para hablar con el monitor
+-------------------------------------------------------
+1677864075: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 4.
+
+*************************************************[0m
+1677864075: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864088: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864088: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 10         ubuntu     666        0            0           
+
+1677864088: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864088: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677864088: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 11         ubuntu     666        0            0           
+
+1677864088: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677864088: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864088: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864095: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864095: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864095: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864095: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864100: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677864100: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864120: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677864120: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677864120: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677864120: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864135: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864135: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 12         ubuntu     666        0            0           
+
+1677864135: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864135: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864138: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864138: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864138: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864138: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864143: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677864143: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864163: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677864163: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677864163: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677864163: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864182: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864182: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 13         ubuntu     666        0            0           
+
+1677864182: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864182: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864187: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864187: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864187: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864187: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864192: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677864192: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864212: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677864212: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677864212: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677864212: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864218: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864218: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 14         ubuntu     666        0            0           
+
+1677864218: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864218: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864224: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864224: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864224: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864224: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864229: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677864229: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864249: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677864249: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677864249: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677864249: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864371: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677864371: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 15         ubuntu     666        0            0           
+
+1677864371: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677864371: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864375: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677864375: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677864375: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677864375: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677864380: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677864380: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677864387: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <55>.
+********************************************[0m
+1677864387: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <745>.
+********************************************[0m
+1677864390: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <338>.
+********************************************[0m
+1677864393: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1677864393: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677864406: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677864406: COMMAND <cp ./client.? .trazas-2>
+1677864406: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677864406: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h18\n" | 	  ftp -n 2>&1 > /dev/null>
+1677864427: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
