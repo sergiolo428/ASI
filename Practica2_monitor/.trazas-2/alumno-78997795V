@@ -1323,3 +1323,2270 @@ ubuntu   tty2         2023-03-03 17:28 (tty2)
 1677864406: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
 1677864406: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h18\n" | 	  ftp -n 2>&1 > /dev/null>
 1677864427: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677865457: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677865457: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677865457: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677865457: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 31654  bytes 30186902 (30.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17413  bytes 4396778 (4.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 2941  bytes 342073 (342.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2941  bytes 342073 (342.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677865457: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677865457: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677865457: 
+La máquina está ya identificada.
+1677865457: RX: <OK Accepted>
+1677865457: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677865458: RX: <OK>
+1677865458: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677865458: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677865458: RX: <REGISTERED>
+1677865458: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677865458: COMMAND <cp ./client.? .trazas-2>
+1677865458: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677865458: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h44\n" | 	  ftp -n 2>&1 > /dev/null>
+1677865478: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677865483: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865483: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 16         ubuntu     666        0            0           
+
+1677865483: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1677865483: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865510: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865510: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 16         ubuntu     666        0            0           
+
+1677865510: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1677865510: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865520: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865520: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 16         ubuntu     666        0            0           
+
+1677865520: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1677865520: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865554: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677865554: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 16         ubuntu     666        0            0           
+
+1677865554: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677865554: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677865554: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 17         ubuntu     666        0            0           
+
+1677865554: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865554: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677865554: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865559: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677865559: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677865559: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677865559: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677865564: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677865564: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677865571: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <55>.
+********************************************[0m
+1677865571: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <745>.
+********************************************[0m
+1677865574: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <338>.
+********************************************[0m
+1677865577: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1677865577: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865582: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865582: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677865582: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865582: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677865582: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865642: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865642: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677865642: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865642: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677865642: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865661: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865661: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677865661: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865661: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677865661: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865845: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865845: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677865845: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865845: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677865845: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677865866: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677865866: COMMAND <cp ./client.? .trazas-2>
+1677865866: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677865866: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h44\n" | 	  ftp -n 2>&1 > /dev/null>
+1677865891: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677865940: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677865940: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677865940: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677865940: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 31758  bytes 30201601 (30.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17501  bytes 4405783 (4.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 2964  bytes 344123 (344.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2964  bytes 344123 (344.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677865940: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677865940: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677865940: 
+La máquina está ya identificada.
+1677865940: RX: <OK Accepted>
+1677865940: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677865940: RX: <OK>
+1677865940: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677865940: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677865940: RX: <REGISTERED>
+1677865940: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677865940: COMMAND <cp ./client.? .trazas-2>
+1677865940: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677865940: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h52\n" | 	  ftp -n 2>&1 > /dev/null>
+1677865960: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677865964: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677865964: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677865964: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677865964: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677865964: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677865964: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866260: INTENTO DE CONEXION DIA:3 MES:3 HORA:18:57m.
+1677866260: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866260: COMMAND <cp ./client.? .trazas-2>
+1677866260: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866260: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h57\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866281: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866449: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866449: COMMAND <cp ./client.? .trazas-2>
+1677866449: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866449: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-18h57\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866469: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866513: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677866513: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677866513: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677866513: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32157  bytes 30350139 (30.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17812  bytes 4475106 (4.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3074  bytes 355177 (355.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3074  bytes 355177 (355.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677866513: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677866513: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677866513: 
+La máquina está ya identificada.
+1677866513: RX: <OK Accepted>
+1677866513: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677866513: RX: <OK>
+1677866513: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677866513: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677866513: RX: <REGISTERED>
+1677866513: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866513: COMMAND <cp ./client.? .trazas-2>
+1677866513: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866513: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h01\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866534: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866565: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677866565: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 19         ubuntu     666        98           17          
+
+1677866565: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1677866565: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866577: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677866577: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 19         ubuntu     666        98           17          
+
+1677866577: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677866577: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677866577: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 20         ubuntu     666        0            0           
+
+1677866577: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677866577: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677866577: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866581: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677866581: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677866581: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677866581: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677866586: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677866586: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677866594: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <55>.
+********************************************[0m
+1677866594: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <745>.
+********************************************[0m
+1677866597: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <338>.
+********************************************[0m
+1677866600: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1677866600: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866604: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677866604: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677866604: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677866604: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677866604: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866671: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866671: COMMAND <cp ./client.? .trazas-2>
+1677866671: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866671: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h01\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866691: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866739: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677866739: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677866739: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677866739: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32247  bytes 30359828 (30.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17892  bytes 4483823 (4.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3090  bytes 356594 (356.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3090  bytes 356594 (356.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677866739: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677866739: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677866739: 
+La máquina está ya identificada.
+1677866740: RX: <OK Accepted>
+1677866740: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677866740: RX: <OK>
+1677866740: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677866740: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677866740: RX: <REGISTERED>
+1677866740: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866740: COMMAND <cp ./client.? .trazas-2>
+1677866740: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866740: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h05\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866760: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866772: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677866772: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677866772: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677866772: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677866772: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677866772: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866784: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1677866784: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <7> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677866786: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <877>.
+********************************************[0m
+1677866789: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <304>.
+********************************************[0m
+1677866792: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1677866792: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677866880: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677866880: COMMAND <cp ./client.? .trazas-2>
+1677866880: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677866880: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h05\n" | 	  ftp -n 2>&1 > /dev/null>
+1677866900: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677866952: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677866952: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677866952: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677866952: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32329  bytes 30374941 (30.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17970  bytes 4491542 (4.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3106  bytes 357886 (357.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3106  bytes 357886 (357.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677866952: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677866952: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867074: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677867074: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677867074: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677867074: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.150  netmask 255.255.192.0  destination 10.254.27.150
+        inet6 fe80::3541:b6a1:c764:2f61  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::70fa:390f:9cff:2189  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 91  bytes 15414 (15.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 147  bytes 11635 (11.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32496  bytes 30424547 (30.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18176  bytes 4532351 (4.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3473  bytes 486993 (486.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3473  bytes 486993 (486.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677867074: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677867074: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867074: 
+La máquina está ya identificada.
+1677867074: RX: <OK Accepted>
+1677867076: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677867076: RX: <OK>
+1677867076: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677867076: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677867076: RX: <REGISTERED>
+1677867076: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867076: COMMAND <cp ./client.? .trazas-2>
+1677867076: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867076: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h11\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867078: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867087: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677867087: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677867087: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867087: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677867087: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677867087: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867096: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1677867096: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <7> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677867098: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <877>.
+********************************************[0m
+1677867101: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <304>.
+********************************************[0m
+1677867104: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1677867104: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867106: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677867106: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+0x78997795 23         ubuntu     666        98           17          
+1677867106: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+1677867106: COMMAND <mkfifo /tmp/fifo_monitor_2 -m 0666>
+1677867106: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+1677867106: COMMAND <mkfifo /tmp/fifo_monitor_1 -m 0666>
+1677867106: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867106: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=7130L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677867108: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677867111: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677867111: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+/tmp/fifo_monitor_2
+1677867111: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1677867111: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1677867111: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867525: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867525: COMMAND <cp ./client.? .trazas-2>
+1677867525: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867525: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h11\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867527: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867544: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677867544: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677867544: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677867544: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.150  netmask 255.255.192.0  destination 10.254.27.150
+        inet6 fe80::3541:b6a1:c764:2f61  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::70fa:390f:9cff:2189  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 217  bytes 29979 (29.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 285  bytes 37826 (37.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32741  bytes 30457937 (30.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18354  bytes 4572403 (4.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4417  bytes 1002884 (1.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4417  bytes 1002884 (1.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677867544: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677867544: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867544: 
+La máquina está ya identificada.
+1677867544: RX: <OK Accepted>
+1677867544: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677867544: RX: <OK>
+1677867544: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677867544: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677867544: RX: <REGISTERED>
+1677867544: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867544: COMMAND <cp ./client.? .trazas-2>
+1677867544: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867544: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h19\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867545: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867551: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677867551: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677867551: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677867551: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677867551: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867551: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=7389L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677867571: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677867571: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 7.
+
+*************************************************[0m
+1677867571: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867575: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677867575: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867575: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677867575: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677867575: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867576: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867579: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1677867579: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <7> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677867588: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677867588: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1677867588: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1677867588: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867589: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867758: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867758: COMMAND <cp ./client.? .trazas-2>
+1677867758: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867758: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h19\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867760: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867793: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677867793: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677867793: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677867793: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.150  netmask 255.255.192.0  destination 10.254.27.150
+        inet6 fe80::3541:b6a1:c764:2f61  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::70fa:390f:9cff:2189  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 309  bytes 41639 (41.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 377  bytes 62388 (62.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32867  bytes 30478924 (30.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18470  bytes 4606163 (4.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4915  bytes 1278278 (1.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4915  bytes 1278278 (1.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677867793: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677867793: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867793: 
+La máquina está ya identificada.
+1677867793: RX: <OK Accepted>
+1677867793: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677867793: RX: <OK>
+1677867793: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677867793: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677867793: RX: <REGISTERED>
+1677867793: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867793: COMMAND <cp ./client.? .trazas-2>
+1677867793: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867793: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h23\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867795: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867797: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867797: COMMAND <cp ./client.? .trazas-2>
+1677867797: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867797: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h23\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867799: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867802: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677867802: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677867802: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677867802: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.150  netmask 255.255.192.0  destination 10.254.27.150
+        inet6 fe80::3541:b6a1:c764:2f61  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::70fa:390f:9cff:2189  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 379  bytes 46202 (46.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 443  bytes 84502 (84.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 32937  bytes 30489077 (30.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18536  bytes 4633557 (4.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4931  bytes 1287126 (1.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4931  bytes 1287126 (1.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677867802: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677867802: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867802: 
+La máquina está ya identificada.
+1677867802: RX: <OK Accepted>
+1677867802: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677867802: RX: <OK>
+1677867802: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677867802: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677867802: RX: <REGISTERED>
+1677867802: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867802: COMMAND <cp ./client.? .trazas-2>
+1677867802: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867802: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h23\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867803: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867810: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677867810: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677867810: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677867810: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677867810: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867810: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=7523L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677867812: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1677867812: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 7.
+
+*************************************************[0m
+1677867812: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867905: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867905: COMMAND <cp ./client.? .trazas-2>
+1677867905: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867905: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h23\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867907: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867913: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677867913: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677867913: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677867913: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.150  netmask 255.255.192.0  destination 10.254.27.150
+        inet6 fe80::3541:b6a1:c764:2f61  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::70fa:390f:9cff:2189  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 452  bytes 50976 (50.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 511  bytes 107297 (107.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 33021  bytes 30500525 (30.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18615  bytes 4662636 (4.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 5153  bytes 1409892 (1.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5153  bytes 1409892 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677867913: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677867913: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677867913: 
+La máquina está ya identificada.
+1677867913: RX: <OK Accepted>
+1677867913: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677867913: RX: <OK>
+1677867913: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677867913: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677867913: RX: <REGISTERED>
+1677867913: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867913: COMMAND <cp ./client.? .trazas-2>
+1677867913: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867913: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h25\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867915: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677867922: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677867922: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677867922: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677867922: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677867922: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677867922: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=7599L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677867924: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677867927: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677867927: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+/tmp/fifo_monitor_2
+1677867927: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1677867927: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1677867927: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 17:28 (tty2)
+1677867945: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677867945: COMMAND <cp ./client.? .trazas-2>
+1677867945: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677867945: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h25\n" | 	  ftp -n 2>&1 > /dev/null>
+1677867946: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868011: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677868011: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677868011: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677868011: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 805  bytes 1013482 (1.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 396  bytes 51764 (51.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 146  bytes 13390 (13.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 146  bytes 13390 (13.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677868011: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677868011: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677868011: 
+La máquina está ya identificada.
+1677868011: RX: <OK Accepted>
+1677868011: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677868011: RX: <OK>
+1677868011: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677868011: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677868011: RX: <REGISTERED>
+1677868011: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868011: COMMAND <cp ./client.? .trazas-2>
+1677868011: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868011: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h26\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868032: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868059: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868059: COMMAND <cp ./client.? .trazas-2>
+1677868059: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868059: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h26\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868095: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868097: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677868097: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677868097: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677868097: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.190  netmask 255.255.192.0  destination 10.254.27.190
+        inet6 fe80::1b71:2bb7:6cdb:ba8d  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::321b:3181:5eda:3aa9  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 12  bytes 2229 (2.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 22  bytes 1368 (1.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 901  bytes 1044431 (1.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 525  bytes 74763 (74.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 377  bytes 44192 (44.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 377  bytes 44192 (44.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677868097: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677868097: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677868097: 
+La máquina está ya identificada.
+1677868097: RX: <OK Accepted>
+1677868097: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677868097: RX: <OK>
+1677868097: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677868097: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677868097: RX: <REGISTERED>
+1677868097: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868097: COMMAND <cp ./client.? .trazas-2>
+1677868097: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868097: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h28\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868099: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868106: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868106: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868106: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+1677868106: COMMAND <mkfifo /tmp/fifo_monitor_2 -m 0666>
+1677868106: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+1677868106: COMMAND <mkfifo /tmp/fifo_monitor_1 -m 0666>
+1677868106: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868106: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=2958L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677868108: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677868111: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868111: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+/tmp/fifo_monitor_2
+1677868111: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1677868111: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1677868111: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868252: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868252: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868252: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677868252: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677868252: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868252: 
+[5m-------------------------------------------------------
+No existe ningún proceso cliente <client>
+-------------------------------------------------------[0m
+1677868252: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 7.
+
+*************************************************[0m
+1677868252: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868269: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868269: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+0x78997795 1          ubuntu     666        0            0           
+1677868269: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677868269: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677868269: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868269: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=2958L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677868272: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677868275: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868275: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+/tmp/fifo_monitor_2
+1677868275: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1677868275: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1677868275: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868314: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868314: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868314: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677868314: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677868314: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868314: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=2958L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677868315: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677868318: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868318: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+/tmp/fifo_monitor_2
+1677868318: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1677868318: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1677868318: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868405: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868405: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868405: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677868405: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677868405: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868405: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=2958L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677868406: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677868409: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868409: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677868409: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677868409: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <574>.
+********************************************[0m
+1677868412: 
+*************************************************
+:ok> CONTEXTO del ejercicio 7 preparado.
+*************************************************
+1677868412: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868418: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677868418: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677868418: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677868418: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677868418: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 19:33 /tmp/fifo_monitor_1
+1677868418: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677868420: 
+------------------------------------------------------------------
+Enviando secreto <1> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677868420: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1677868420: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868428: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1677868428: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 19:33 /tmp/fifo_monitor_1
+1677868428: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677868428: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/fifo_monitor_2>.
+-------------------------------------------------------
+1677868428: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677868433: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+prw-rw-r-- 1 ubuntu ubuntu 0 mar  3 19:33 /tmp/fifo_monitor_2
+1677868433: 
+-------------------------------------------------------
+ MONITOR: Abriendo el dispositivo </tmp/fifo_monitor_2> para leer.
+-------------------------------------------------------
+1677868433: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <1> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677868433: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <139>.
+********************************************[0m
+1677868436: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677868436: 
+------------------------------------------------------------------
+Enviando secreto <2> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677868436: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <2> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677868436: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <580>.
+********************************************[0m
+1677868436: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1677868436: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868442: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677868442: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868442: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677868442: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868461: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677868461: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677868461: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677868461: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868466: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677868466: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677868474: 
+[5m-------------------------------------------------------
+Mal formato de mensaje. Se esperaba "<999><888>" y ha llegado "<0>".
+-------------------------------------------------------[0m
+1677868474: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1677868474: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1677868474: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868486: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868486: COMMAND <cp ./client.? .trazas-2>
+1677868486: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868486: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h28\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868487: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868496: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677868496: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677868496: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677868496: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.190  netmask 255.255.192.0  destination 10.254.27.190
+        inet6 fe80::1b71:2bb7:6cdb:ba8d  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::321b:3181:5eda:3aa9  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 170  bytes 69753 (69.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 178  bytes 43884 (43.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 1110  bytes 1126854 (1.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 724  bytes 132578 (132.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1194  bytes 482271 (482.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1194  bytes 482271 (482.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677868496: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677868496: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677868496: 
+La máquina está ya identificada.
+1677868496: RX: <OK Accepted>
+1677868496: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677868496: RX: <OK>
+1677868496: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677868496: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677868496: RX: <REGISTERED>
+1677868496: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868496: COMMAND <cp ./client.? .trazas-2>
+1677868496: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868496: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h34\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868498: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868514: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677868514: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868514: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677868514: 
+-------------------------------------------------------
+CREANDO COLA MENSAJES usando clave de acceso: 0x78997795L
+-------------------------------------------------------
+1677868514: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 5          ubuntu     666        0            0           
+
+1677868514: 
+------------------------------------------------------------------
+Enviando secreto <3> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677868514: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677868514: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868519: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677868519: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677868519: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677868519: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868524: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677868524: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677868531: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <55>.
+********************************************[0m
+1677868531: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <745>.
+********************************************[0m
+1677868534: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <338>.
+********************************************[0m
+1677868537: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1677868537: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868543: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677868543: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868543: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677868543: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677868543: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868610: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868610: COMMAND <cp ./client.? .trazas-2>
+1677868610: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868610: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h34\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868612: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868629: COMMAND <cp ./monitor2 /tmp/.monitor2>
+1677868629: COMMAND <cp -f /tmp/.monitor2 ./monitor2>
+1677868629: COMMAND <uname -a >> .trazas-2/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-32-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 30 17:03:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1677868629: COMMAND <ifconfig 2>&1 >> .trazas-2/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.27.190  netmask 255.255.192.0  destination 10.254.27.190
+        inet6 fe80::1b71:2bb7:6cdb:ba8d  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::321b:3181:5eda:3aa9  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 246  bytes 75729 (75.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 259  bytes 72332 (72.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 1204  bytes 1139920 (1.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 823  bytes 168693 (168.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1480  bytes 628147 (628.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1480  bytes 628147 (628.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1677868629: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-2/alumno-78997795V>
+MACHINE-ID: 1677868629: COMMAND <cat /etc/machine-id >> .trazas-2/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1677868629: 
+La máquina está ya identificada.
+1677868629: RX: <OK Accepted>
+1677868629: TX: <CHECKPWD bmmNS3EF+5EHa->
+1677868629: RX: <OK>
+1677868629: 
+********************************************
+           INICIANDO SESION
+********************************************
+1677868629: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1677868630: RX: <REGISTERED>
+1677868630: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677868630: COMMAND <cp ./client.? .trazas-2>
+1677868630: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677868630: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h37\n" | 	  ftp -n 2>&1 > /dev/null>
+1677868631: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>
+1677868646: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1677868646: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868646: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868646: 
+------------------------------------------------------------------
+Enviando secreto <6> a través de la cola de mensajes con clave 0x78997795L
+------------------------------------------------------------------
+1677868646: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1677868646: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868652: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1677868652: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <7> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677868654: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <877>.
+********************************************[0m
+1677868657: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <304>.
+********************************************[0m
+1677868660: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1677868660: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868667: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1677868667: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+0x78997795 7          ubuntu     666        98           17          
+
+1677868667: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1677868667: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868682: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1677868682: 
+-------------------------------------------------------
+Se procede al borrado de la cola de mensajes con clave <0x78997795L>
+ Se espera que el alumno la cree en un tiempo determinado
+-------------------------------------------------------
+1677868682: COMMAND <ipcrm -Q 0x78997795 >> .trazas-2/alumno-78997795V>
+1677868682: COMMAND <ipcs -q >> .trazas-2/alumno-78997795V>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+1677868687: 
+-------------------------------------------------------
+:M> Identificada la cola de mensajes con clave <0x78997795L>
+-------------------------------------------------------
+1677868687: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <3> en la cola <0x78997795L>.
+----------------------------------------------------------------------------------
+1677868694: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <55>.
+********************************************[0m
+1677868694: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <745>.
+********************************************[0m
+1677868697: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <338>.
+********************************************[0m
+1677868700: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1677868700: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868701: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868707: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1677868707: COMMAND <rm -f /tmp/fifo_monitor_1>
+1677868707: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677868707: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677868707: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 19:38 /tmp/fifo_monitor_1
+1677868707: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677868709: 
+------------------------------------------------------------------
+Enviando secreto <1> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677868709: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1677868709: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868713: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1677868713: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 19:38 /tmp/fifo_monitor_1
+1677868713: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+prw-rw-r-- 1 ubuntu ubuntu 0 mar  3 19:33 /tmp/fifo_monitor_2
+1677868713: 
+-------------------------------------------------------
+Existe el fifo </tmp/fifo_monitor_2>.
+Se procede a su borrado para esperar a su creación
+-------------------------------------------------------
+1677868713: COMMAND <rm -f /tmp/fifo_monitor_2>
+1677868713: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/fifo_monitor_2>.
+-------------------------------------------------------
+1677868713: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677868718: COMMAND <ls -al /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+prw-rw-r-- 1 ubuntu ubuntu 0 mar  3 19:38 /tmp/fifo_monitor_2
+1677868718: 
+-------------------------------------------------------
+ MONITOR: Abriendo el dispositivo </tmp/fifo_monitor_2> para leer.
+-------------------------------------------------------
+1677868718: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <1> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677868718: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <139>.
+********************************************[0m
+1677868721: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/fifo_monitor_1> en 20 segundos
+-------------------------------------------------------
+1677868721: 
+------------------------------------------------------------------
+Enviando secreto <2> a través del dispositivo </tmp/fifo_monitor_1>
+------------------------------------------------------------------
+1677868721: 
+----------------------------------------------------------------------------------
+ Esperando 20 segundos a leer la respuesta al ejercicio <2> en el dispositivo </tmp/fifo_monitor_2>.
+----------------------------------------------------------------------------------
+1677868721: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <580>.
+********************************************[0m
+1677868721: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1677868721: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868725: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1677868725: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+0x78997795 8          ubuntu     666        0            0           
+1677868725: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_2
+1677868725: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V>
+/tmp/fifo_monitor_1
+1677868725: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1677868725: 
+-------------------------------------------------------
+Esperando durante 20 segundos recibir en la cola de mensaje (0x78997795L)
+un mensaje de inicio (tipo=4309L) antes de iniciar la limpieza de recursos
+-------------------------------------------------------
+1677868726: 
+----------------------------------------------------------------------------------
+ Están disponibles todos los recursos utilizados. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1677868729: COMMAND <ipcs -q | grep ^0x78997795 >> .trazas-2/alumno-78997795V>
+1677868729: COMMAND <ls /tmp/fifo_monitor_2 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_2': No existe el archivo o el directorio
+1677868729: COMMAND <ls /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677868729: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <574>.
+********************************************[0m
+1677868732: 
+*************************************************
+:ok> CONTEXTO del ejercicio 7 preparado.
+*************************************************
+1677868732: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677868869: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1677868869: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+ls: no se puede acceder a '/tmp/fifo_monitor_1': No existe el archivo o el directorio
+1677868869: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/fifo_monitor_1> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1677868869: COMMAND <ls -al /tmp/fifo_monitor_1 >> .trazas-2/alumno-78997795V 2>&1>
+prw------- 1 ubuntu ubuntu 0 mar  3 19:41 /tmp/fifo_monitor_1
+1677868869: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1677868869: COMMAND <who >> .trazas-2/alumno-78997795V>
+ubuntu   tty2         2023-03-03 19:26 (tty2)
+1677869049: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1677869049: COMMAND <cp ./client.? .trazas-2>
+1677869049: COMMAND <tar zcf save_file-78997795V .trazas-2 > /dev/null>
+1677869049: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-2\nput save_file-78997795V 78997795V-3-3-19h37\n" | 	  ftp -n 2>&1 > /dev/null>
+1677869051: COMMAND <test -f .trazas-2/.clean_bck.tz && rm .trazas-2/.clean_bck.tz>

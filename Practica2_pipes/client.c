@@ -95,7 +95,7 @@
  * 
  * Llamadas a sistema:
  * 
- * int idCola = msgget(CLAVE,IPC_CREAT) --> Creamos el buzon
+ * int idCola = msgget(CLAVE,0666|IPC_CREAT) --> Creamos el buzon
  * 
  * struct Msg mensaje1;
  * struct Msg mensaje2;

@@ -23,9 +23,13 @@ void ejer7();
 #define SIZE 128
 #define CLAVE 0x78997795L
 
+int mid;
+
 int main(int argc, char** argv) {
     
     int ejer=1;     
+    printf("Introduce el ID del monitor: ");
+    scanf("%d",&mid);
     
     while(ejer!=0){
         printf("Introduce el numero de ejercicio: ");
@@ -46,14 +50,18 @@ int main(int argc, char** argv) {
                 break;
             case 4:
                 printf("Ejercicio 4:\n");
+                printf("Seleccione el ejercicio 3 para realizar los ejercicios 3 y 4.\n");
                 break;
             case 5:
                 printf("Ejercicio 5:\n");
+                ejer5();
                 break;
             case 6:
                 printf("Ejercicio 6:\n");
                 break;
             case 7:
+                printf("Ejercicio 7:\n");
+                ejer7();
                 break;
             default:
                 exit(0);
@@ -117,7 +125,7 @@ void ejer3(){
     int idCola = msgget(CLAVE,0666);
     char str1[SIZE],str[SIZE];
     
-    msgrcv(idCola,&mensaje1,sizeof(mensaje1.mensaje),0,0);//Por que es en el 0??
+    msgrcv(idCola,&mensaje1,sizeof(mensaje1.mensaje),0,0);//Por que es en el 0??, donde leo??
     
     printf("Leido %ld y %s.\n",mensaje1.tipo,mensaje1.mensaje);
     
@@ -142,6 +150,47 @@ void ejer3(){
     msgsnd(idCola2,&mensaje2,sizeof(mensaje2.mensaje),0);
     sleep(5);
     
-    //msgctl(idCola2, IPC_RMID,0);
+    //msgctl(idCola2,IPC_RMID,0);
+    
+}
+
+void ejer5(){
+    
+    struct Msg mensaje1;
+    struct Msg mensaje2;
+    char str[SIZE];
+    int wait;
+    int idCola=msgget(CLAVE,0666);
+    
+    msgrcv(idCola,&mensaje1,sizeof(mensaje1.mensaje),getpid(),0);
+    strcpy(str,mensaje1.mensaje);
+    printf("Obtenido %s en %ld.\n",str,mensaje1.tipo);
+    
+    printf("Pulsa 6 para continuar: ");
+    scanf("%d",&wait);
+    
+    mensaje2.tipo=mid;
+    strcpy(mensaje2.mensaje,str);
+    msgsnd(idCola,&mensaje2,sizeof(mensaje2.mensaje),0);
+    sleep(3);
+    
+    
+    
+    printf("Pulsa 7 para continuar: ");
+    scanf("%d",&wait);
+    
+    sleep(2);
+}
+
+void ejer7(){
+    int idCola=msgget(CLAVE,0666|IPC_CREAT);
+    struct Msg mensaje2;
+    strcpy(mensaje2.mensaje,"Test");
+    mensaje2.tipo=mid;
+    unlink("/tmp/fifo_monitor_2");
+    unlink("/tmp/fifo_monitor_1");
+    msgsnd(idCola,&mensaje2,sizeof(mensaje2.mensaje),0);
+    msgctl(idCola,IPC_RMID,0);
+    sleep(5);
     
 }
