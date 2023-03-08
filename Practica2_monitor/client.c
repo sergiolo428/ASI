@@ -1,4 +1,4 @@
-
+/*Sergio Lopez Alejandro - Practica2_Monitor */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,11 +13,8 @@
 #include <sys/msg.h>
 
 void ejer1();
-void ejer2();
 void ejer3();
-void ejer4();
 void ejer5();
-void ejer6();
 void ejer7();
 
 #define SIZE 128

@@ -1,4 +1,4 @@
-
+/*Sergio Lopez Alejandro - Practica2_Pipes_Fifo_Colas */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -225,86 +225,81 @@ void funcionFifo(){
     }
 }
 
+struct Msg{
+        long canal;
+        char texto[SIZE];
+    };
+
 // OJO, ESTA FUNCION TIENE ERRORRES
 void funcionColasMsg(){
     
-    typedef struct msg{
-        long canal;
-        char texto[SIZE];
-    }Msg;
-    
     int pid1,pid2;
     
-    int idCola;
-    
-    idCola=msgget(CLAVE,0666|IPC_CREAT);
     
     pid1=fork();
     if(pid1==0){
         //Hijo1
+        sleep(1);
+        int idCola1=msgget(CLAVE,0666);
         char texto1[SIZE];
         printf("Soy el Hijo 1.\n");
         printf("Introduce tu frase: ");
         fgets(texto1,SIZE,stdin);
         
-        printf("test");
         
+        struct Msg mensaje1;
+        struct Msg mensaje11;
+        int canalLectura=2;
+        int canalEscritura=1;
         
-        Msg mensaje1;
-        Msg mensaje11;
-        int canalLectura=1;
-        int canalEscritura=0;
-        
-        
-        
+                
         //Quitamos el salto de linea
         if(texto1[strlen(texto1)-1]=='\n'){
             texto1[strlen(texto1)-1]='\0';
         }
-        printf("test1");
         
         strcpy(mensaje1.texto,texto1);
         mensaje1.canal=canalEscritura;
-        printf("Hijo 1 manda: <%s> a Hijo 2.",mensaje1.texto);
+        printf("Hijo 1 manda: <%s> a Hijo 2.\n",mensaje1.texto);
         
-        msgsnd(idCola,&mensaje1,sizeof(mensaje1.texto),0);
-        msgrcv(idCola,&mensaje11,sizeof(mensaje11.texto),canalLectura,0);
+        msgsnd(idCola1,&mensaje1,sizeof(mensaje1.texto),0);
+        msgrcv(idCola1,&mensaje11,sizeof(mensaje11.texto),canalLectura,0);
         
-        printf("La frase es %s.",mensaje11.texto);
+        printf("La frase es %s.\n",mensaje11.texto);
         exit(0);
         
     }else{
         pid2=fork();
         if(pid2==0){
             //Hijo2
+            int idCola2=msgget(CLAVE,0666|IPC_CREAT);
             printf("Soy el Hijo 2.\n");
-            Msg mensaje2;
-            int canalLectura=0;
-            int canalEscritura=1;
+            struct Msg mensaje2;
+            int canalLectura=1;
+            int canalEscritura=2;
             int i=0;
             int val;
             
-            msgrcv(idCola,&mensaje2,sizeof(mensaje2.texto),canalLectura,0);
-            printf("Hijo 2 obtiene: <%s> de Hijo 1.",mensaje2.texto);
+            msgrcv(idCola2,&mensaje2,sizeof(mensaje2.texto),canalLectura,0);
+            printf("Hijo 2 obtiene: <%s> de Hijo 1.\n",mensaje2.texto);
             
             while(mensaje2.texto[i]!='\0'){
                 mensaje2.texto[i]=toupper(mensaje2.texto[i]);
                 i++;
             }
             
-            printf("Hijo 2 envia: <%s> a Hijo 1.",mensaje2.texto);
+            printf("Hijo 2 envia: <%s> a Hijo 1.\n",mensaje2.texto);
             
             mensaje2.canal=canalEscritura;
-            msgsnd(idCola,&mensaje2,strlen(mensaje2.texto),0);
+            msgsnd(idCola2,&mensaje2,strlen(mensaje2.texto),0);
             exit(0);
-            
         }else{
             //Padre
             int status;
             printf("Soy el padre.\n");
             wait(&status);
-            msgctl(idCola,IPC_RMID,NULL);
-            printf("Cola eliminada.\n");
+            //msgctl(idCola2,IPC_RMID,NULL);
+            printf("Finalizado.\n");
             exit(0);
         }
     }

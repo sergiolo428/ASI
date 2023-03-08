@@ -1,3 +1,5 @@
+/*Sergio Lopez Alejandro - Practica2_ColasServer */
+
 #include <stdio.h>
 #include <stdlib.h>
 
