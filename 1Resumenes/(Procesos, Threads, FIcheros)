@@ -60,29 +60,66 @@ fgets(frase,sizeof(frase),stdin);
 int val;
 scanf("%d",&val);
 
+
 //--------------------Practica 2------------------
 
 //------------Pipe------------
 
 //Id - Inicializacion
+int fd[2];
+pipe(fd);
 
 //Funciones
 
+write(fd[1],buffer,strlen(buffer));
+
+read(fd[0],buffer,SIZE);
+
 //Importante
+
+/*Solo vale para procesos con un mismo padre*/
+/*Es buena idea declarar el fifo bien como global, o si no, en el padre*/
 
 //------------Fifo------------
 
 //Id - Inicializacion
 
+fd=mkfifo("Nombre",0_RDWR); //Read & Write
+
 //Funciones
 
+write(fd,buffer,strlen(buffer));
+
+read(fd,buffer,SIZE);
+
 //Importante
+
+/*Puede ser usado pro procesos con diferente padre*/
 
 //------------Colas------------
 
 //Id - Inicializacion
 
+struct Msg{
+	long type;
+	char msg[SIZE];
+	}
+	
+struct Msg buffer;
+int idCola;
+
+
+idCola = msgget(CLAVE,0666|IPC_CREAT) //--> Crear y Usar
+idCola = msgget(CLAVE,0666) //--> Usar
+
 //Funciones
+
+msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
+
+buffer.type = CanalEscritura;
+msgsnd(idCola,&buffer,strlen(buffer),0);
+
+msgctl(idCola,IPC_RMID,NULL); //Elimina Cola (Hacer donde se creo)
 
 //Importante
 

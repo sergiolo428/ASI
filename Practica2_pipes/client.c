@@ -109,9 +109,9 @@
  * 
  * IMPORTANTE
  * 
- * En caso de qu emuchos procesos quieran comunicarse,
- * pueden mandar por un canal 0 por ejemplo, un mensaje con una structurade
- * long, int, msj, donde el int sera su pripio pid. Entonces a partir de ese emnsaje, los dos procesos
+ * En caso de que muchos procesos quieran comunicarse,
+ * pueden mandar por un canal 1 por ejemplo, un mensaje con una structura de
+ * long, int, msj, donde el int sera su pripio pid. Entonces a partir de ese mensaje, los dos procesos
  * pasarana comunicarse por el canal coincidente con ese pid.
  * 
  * 
