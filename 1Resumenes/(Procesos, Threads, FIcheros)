@@ -1,3 +1,5 @@
+//--------------------Practica 1------------------
+
 //--------------1--------------
 //Crear proceso
 pid=fork();
@@ -57,3 +59,30 @@ fgets(frase,sizeof(frase),stdin);
 //Ints
 int val;
 scanf("%d",&val);
+
+//--------------------Practica 2------------------
+
+//------------Pipe------------
+
+//Id - Inicializacion
+
+//Funciones
+
+//Importante
+
+//------------Fifo------------
+
+//Id - Inicializacion
+
+//Funciones
+
+//Importante
+
+//------------Colas------------
+
+//Id - Inicializacion
+
+//Funciones
+
+//Importante
+
