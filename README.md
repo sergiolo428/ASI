@@ -4,7 +4,9 @@
 
 ###### 1 Crear proceso
 
-`pid=fork();`
+```
+pid=fork();
+```
 
 ###### 2 Diferenciar entre codigo del proceso padre y proceso hijo
 
@@ -23,7 +25,9 @@ if(pid==0){
 
 Declaramos funcion thread
 
-`void *funcionThread(void *arg);`
+```
+void *funcionThread(void *arg);
+```
 
 Variables
 ```
@@ -53,16 +57,24 @@ char variableDondeGuardar[SIZE];
 
 Creamos fichero
 
-`f=fopen("file.txt","w");`
+```
+f=fopen("file.txt","w");
+```
 
 Editar fichero
-`fwrite(variableAEscribir,sizeof(char),strlen(variableAEscribir),f);`
+```
+fwrite(variableAEscribir,sizeof(char),strlen(variableAEscribir),f);
+```
 
 Leer fichero
-`fread(variableDendeGuardar,sizeof(char),SIZE,f);`
+```
+fread(variableDendeGuardar,sizeof(char),SIZE,f);
+```
 
 Cerrar fichero
-`fclose(f);`
+```
+fclose(f);
+```
 
 //--------------5--------------
 //Leer del teclado
