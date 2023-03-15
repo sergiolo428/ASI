@@ -1,4 +1,5 @@
-# ASI_22-23 apuntes
+# Aarquitectura de sistemas de información - Resumen
+
 
 ## Practica 1 - Procesos, subprocesos, hilos y ficheros
 
