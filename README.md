@@ -114,8 +114,9 @@ read(fd[0],buffer,SIZE);
 
 ### IMPORTANTE
 
-*Solo vale para procesos con un mismo padre*
-*Es buena idea declarar el fifo bien como global, o si no, en el padre*
+**Solo vale para procesos con un mismo padre.**
+
+**Es buena idea declarar el fifo bien como global, o si no, en el padre**
 
 //------------Fifo------------
 
