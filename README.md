@@ -2,13 +2,13 @@
 
 ## Practica 1 - Procesos, subprocesos, hilos y ficheros
 
-## 1 Crear proceso
+### 1 Crear proceso
 
 ```
 pid=fork();
 ```
 
-## 2 Diferenciar entre codigo del proceso padre y proceso hijo
+### 2 Diferenciar entre codigo del proceso padre y proceso hijo
 
 ```
 if(pid==0){
@@ -20,7 +20,7 @@ if(pid==0){
 }
 ```
 
-###### 3 Crear Thread
+### 3 Crear Thread
 
 
 Declaramos funcion thread
@@ -46,7 +46,7 @@ void* funcionThread(void *args){
 }
 ```
 
-###### 4 Ficheros
+### 4 Ficheros
 
 Declaramos variables
 ```
@@ -76,7 +76,7 @@ Cerrar fichero
 fclose(f);
 ```
 
-##### 5 Leer del teclado
+## 5 Leer del teclado
 
 Strings
 ```
