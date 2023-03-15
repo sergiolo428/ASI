@@ -118,6 +118,7 @@ read(fd[0],buffer,SIZE);
 
 **Es buena idea declarar el fifo bien como global, o si no, en el padre**
 
+
 ## Fifo
 
 ### 1 Creamos Fifo
@@ -136,6 +137,7 @@ read(fd,buffer,SIZE);
 
 ### IMPORTANTE
 **Puede ser usado por procesos con diferente padre**
+
 
 ## Colas
 
@@ -177,5 +179,7 @@ msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
 ```
 
 ### 6 Eliminar cola
+```
 msgctl(idCola,IPC_RMID,NULL); //Elimina Cola (Hacer donde se creo)
+```
 
