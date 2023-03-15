@@ -183,3 +183,4 @@ msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
 msgctl(idCola,IPC_RMID,NULL); //Elimina Cola (Hacer donde se creo)
 ```
 
+## Practica 3 - //TO DO
