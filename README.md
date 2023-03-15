@@ -118,44 +118,64 @@ read(fd[0],buffer,SIZE);
 
 **Es buena idea declarar el fifo bien como global, o si no, en el padre**
 
-//------------Fifo------------
+## Fifo
 
-//Id - Inicializacion
+### 1 Creamos Fifo
 
 fd=mkfifo("Nombre",0_RDWR); //Read & Write
 
-//Funciones
-
+### 2 Escritura
+```
 write(fd,buffer,strlen(buffer));
+```
 
+### 3 Lectura
+```
 read(fd,buffer,SIZE);
+```
 
-//Importante
+### IMPORTANTE
+**Puede ser usado por procesos con diferente padre**
 
-/*Puede ser usado pro procesos con diferente padre*/
+## Colas
 
-//------------Colas------------
 
-//Id - Inicializacion
-
+### 1 Declaramos estructura
+```
 struct Msg{
 	long type;
 	char msg[SIZE];
 	}
-	
+```
+
+### 2 Declaramos variables
+```
 struct Msg buffer;
 int idCola;
+```
 
+### 3 Obtenemos identificador
+```
+idCola = msgget(CLAVE,0666|IPC_CREAT) //--> Crear y Usar cola
+```
 
-idCola = msgget(CLAVE,0666|IPC_CREAT) //--> Crear y Usar
-idCola = msgget(CLAVE,0666) //--> Usar
+or
 
-//Funciones
+```
+idCola = msgget(CLAVE,0666) //--> Usar cola
+```
 
-msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
-
+### 4 Escritura
+```
 buffer.type = CanalEscritura;
 msgsnd(idCola,&buffer,strlen(buffer),0);
+```
 
+### 5 Lectura
+```
+msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
+```
+
+### 6 Eliminar cola
 msgctl(idCola,IPC_RMID,NULL); //Elimina Cola (Hacer donde se creo)
 
