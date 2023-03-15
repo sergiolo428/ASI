@@ -2,13 +2,13 @@
 
 ## Practica 1 - Procesos, subprocesos, hilos y ficheros
 
-###### 1 Crear proceso
+## 1 Crear proceso
 
 ```
 pid=fork();
 ```
 
-###### 2 Diferenciar entre codigo del proceso padre y proceso hijo
+## 2 Diferenciar entre codigo del proceso padre y proceso hijo
 
 ```
 if(pid==0){
@@ -31,18 +31,18 @@ void *funcionThread(void *arg);
 
 Variables
 ```
-pthread_t mythread;//Declaramos una variable pthread_t
-pthread_create(&mythread,NULL,funcionThread,&i);//Creamos el Thread
+pthread_t mythread; //Declaramos una variable pthread_t
+pthread_create(&mythread,NULL,funcionThread,&i); //Creamos el Thread
 ```
 
 Creamos funcion del Thread
 
 ```
 void* funcionThread(void *args){
-	int i=*(int *)arg;//Obtenemos el valor i del parametro
+	int i=*(int *)arg; //Obtenemos el valor i del parametro
 	printf("Soy el hilo %d.\n",i);
 	//Varias operaciones
-	pthread_exit(NULL);//Recordar salir del thread al terminar
+	pthread_exit(NULL); //Recordar salir del thread al terminar
 }
 ```
 
