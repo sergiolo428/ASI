@@ -12,6 +12,7 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 
+
 void ejer1();
 void ejer3();
 void ejer5();
