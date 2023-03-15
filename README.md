@@ -1,6 +1,6 @@
 # ASI_22-23 apuntes
 
-## Practica 1
+## Practica 1 - Procesos, subprocesos, hilos y ficheros
 
 ###### 1 Crear proceso
 
@@ -76,19 +76,21 @@ Cerrar fichero
 fclose(f);
 ```
 
-//--------------5--------------
-//Leer del teclado
+##### 5 Leer del teclado
 
-//Strings
+Strings
+```
 char frase[SIZE];
 fgets(frase,sizeof(frase),stdin);
+```
 
-//Ints
+Ints
+```
 int val;
 scanf("%d",&val);
+```
 
-
-//--------------------Practica 2------------------
+## Practica 2 - Pipe, Fifo y Colas de mensajes
 
 //------------Pipe------------
 
