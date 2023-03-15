@@ -76,7 +76,7 @@ Cerrar fichero
 fclose(f);
 ```
 
-## 5 Leer del teclado
+### 5 Leer del teclado
 
 Strings
 ```
@@ -92,22 +92,30 @@ scanf("%d",&val);
 
 ## Practica 2 - Pipe, Fifo y Colas de mensajes
 
-//------------Pipe------------
+## Pipe
 
-//Id - Inicializacion
+### 1 Creamos Pipe
+```
 int fd[2];
 pipe(fd);
+```
 
-//Funciones
 
+### 2 Escritura
+```
 write(fd[1],buffer,strlen(buffer));
+```
 
+### 3 Lectura
+```
 read(fd[0],buffer,SIZE);
+```
 
-//Importante
 
-/*Solo vale para procesos con un mismo padre*/
-/*Es buena idea declarar el fifo bien como global, o si no, en el padre*/
+### IMPORTANTE
+
+*Solo vale para procesos con un mismo padre*
+*Es buena idea declarar el fifo bien como global, o si no, en el padre*
 
 //------------Fifo------------
 
