@@ -56,7 +56,6 @@
 #include <string.h>
 
 
-
 #define CLAVE 0x78997795L
 #define SIZE 128
 
@@ -74,8 +73,9 @@ int main(int argc, char** argv) {
         printf("2 --> Obtener frase en mayus + print\n\n");
         
         printf("Introduce la opcion: ");
-        scanf("%d\n",&a);
-
+        scanf("%d",&a);
+        fgetc(stdin);
+        
         switch(a){
             case 0:
                 shmdt(dirMemChar);
@@ -83,15 +83,24 @@ int main(int argc, char** argv) {
                 
                 break;
             case 1:
-                idMem = shmget(CLAVE,1024,0666);
+                idMem = shmget(CLAVE,1024,0600);
                 dirMemChar = shmat(idMem,NULL,0);
-
+                
+                if(idMem==-1){
+                    printf("ERROR ACCEDIENDO MEMORIA\n");
+                    exit(0);
+                }
+                
+                if(dirMemChar == (char*)-1){
+                    printf("ERROR OBTENIENDO DIRECCION\n");
+                }
+                
                 printf("Introduce tu frase: ");
                 
                 fgets(texto,SIZE,stdin);
 
                 if(texto[strlen(texto)-1]=='\n'){
-                    texto[strlen(texto)-1]=='\0';
+                    texto[strlen(texto)-1]='\0';
                 }
 
                 printf("Tu frase es: %s.\n",texto);
@@ -108,6 +117,8 @@ int main(int argc, char** argv) {
                 strcpy(texto,(dirMemChar+SIZE));
 
                 printf("La nueva frase es: %s\n",texto);
+                strcpy(texto,(dirMemChar));
+                printf("La frase antigua es: %s\n",texto);
                 printf("Pulsa 0 para salir.\n");
                 break;
             default:

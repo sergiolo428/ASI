@@ -20,6 +20,19 @@ int main(int argc, char** argv) {
     int idMem;
     char *dirMemChar;
     int i=0;
+    
+    idMem = shmget(CLAVE,1024,0666 | IPC_CREAT);
+    dirMemChar = (char *)shmat(idMem,NULL,0);
+        
+    if(idMem==-1){
+        printf("ERROR CREANDO MEMORIA");
+        exit(0);
+    }
+    
+    if(dirMemChar == (char*)-1){
+        printf("ERROR OBTENIENDO DIRECCION\n");
+    }
+    
    
     while(1){
         printf("\nMENU\n");
@@ -27,10 +40,8 @@ int main(int argc, char** argv) {
         printf("1 --> Obtener frase + mayus + mandar\n\n");
         printf("Introduce la opcion: ");
         scanf("%d",&a);
+        fgetc(stdin);
         
-        idMem = shmget(CLAVE,1024,IPC_CREAT|0666);
-        dirMemChar = (char *)shmat(idMem,NULL,0);
-    
         switch(a){
             case 0:
                 shmdt(dirMemChar);
@@ -38,16 +49,18 @@ int main(int argc, char** argv) {
                 exit(0);
                 break;
             case 1:
+                printf("Obteniendo frase original...\n");
                 strcpy(texto,dirMemChar);
 
                 i=0;
                 while(texto[i]!='\0'){
-                    texto[i]==toupper(texto[i]);
+                    texto[i]=toupper(texto[i]);
+                    i++;
                 }
-
+                printf("Nueva frase: %s.\n",texto);
                 printf("Guardando frase nueva en memoria...\n");
                 strcpy((dirMemChar + SIZE),texto);
-                printf("Memoria Guardadada");
+                printf("Frase Guardadada");
 
                 break;
             default:
