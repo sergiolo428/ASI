@@ -46,7 +46,7 @@
 
 //mensaje1 = (Mesg *)shmat(id,NULL,0)
 
-//int b = mensaje1.b
+//int b = mensaje1[0].b --> Hay que poner [0] al ser un puntero???
 
 #include <stdio.h>
 #include <stdlib.h>
