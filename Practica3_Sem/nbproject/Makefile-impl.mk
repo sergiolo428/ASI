@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Practica3_Mem_Sem
+PROJECTNAME=Practica3_Sem
 
 # Active Configuration
 DEFAULTCONF=Debug
