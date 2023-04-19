@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     char c2;
     
     
-    /*espera(1);
+    espera(1);
     ejer1();
     espera(2);
     ejer2();
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     espera(5);
     ejer5();
     espera(6);
-    ejer6();*/
+    ejer6();
     espera(7);
     ejer7();
     

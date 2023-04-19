@@ -33,7 +33,7 @@ void *funcionThread(void *arg);
 Variables
 ```
 pthread_t mythread; //Declaramos una variable pthread_t
-pthread_create(&mythread,NULL,funcionThread,&i); //Creamos el Thread
+pthread_create(&mythread, NULL, funcionThread, &i); //Creamos el Thread
 ```
 
 Creamos funcion del Thread
@@ -59,17 +59,17 @@ char variableDondeGuardar[SIZE];
 Creamos fichero
 
 ```
-f=fopen("file.txt","w");
+f=fopen("file.txt", "w");
 ```
 
 Editar fichero
 ```
-fwrite(variableAEscribir,sizeof(char),strlen(variableAEscribir),f);
+fwrite(variableAEscribir, sizeof(char), strlen(variableAEscribir), f);
 ```
 
 Leer fichero
 ```
-fread(variableDendeGuardar,sizeof(char),SIZE,f);
+fread(variableDendeGuardar, sizeof(char), SIZE, f);
 ```
 
 Cerrar fichero
@@ -82,13 +82,13 @@ fclose(f);
 Strings
 ```
 char frase[SIZE];
-fgets(frase,sizeof(frase),stdin);
+fgets(frase, sizeof(frase), stdin);
 ```
 
 Ints
 ```
 int val;
-scanf("%d",&val);
+scanf("%d", &val);
 ```
 
 ## Practica 2 - Pipe, Fifo y Colas de mensajes
@@ -104,12 +104,12 @@ pipe(fd);
 
 ### 2 Escritura
 ```
-write(fd[1],buffer,strlen(buffer));
+write(fd[1], buffer, strlen(buffer));
 ```
 
 ### 3 Lectura
 ```
-read(fd[0],buffer,SIZE);
+read(fd[0], buffer, SIZE);
 ```
 
 
@@ -123,17 +123,17 @@ read(fd[0],buffer,SIZE);
 ## Fifo
 
 ### 1 Creamos Fifo
-
-fd=mkfifo("Nombre",0_RDWR); //Read & Write
-
+```
+fd=mkfifo("Nombre", 0_RDWR); //Read & Write
+```
 ### 2 Escritura
 ```
-write(fd,buffer,strlen(buffer));
+write(fd, buffer, strlen(buffer));
 ```
 
 ### 3 Lectura
 ```
-read(fd,buffer,SIZE);
+read(fd, buffer, SIZE);
 ```
 
 ### IMPORTANTE
@@ -159,29 +159,105 @@ int idCola;
 
 ### 3 Obtenemos identificador
 ```
-idCola = msgget(CLAVE,0666|IPC_CREAT) //--> Crear y Usar cola
+idCola = msgget(CLAVE, 0666 | IPC_CREAT) //--> Crear y Usar cola
 ```
 
 or
 
 ```
-idCola = msgget(CLAVE,0666) //--> Usar cola
+idCola = msgget(CLAVE, 0666) //--> Usar cola
 ```
 
 ### 4 Escritura
 ```
 buffer.type = CanalEscritura;
-msgsnd(idCola,&buffer,strlen(buffer),0);
+msgsnd(idCola, &buffer, strlen(buffer), 0);
 ```
 
 ### 5 Lectura
 ```
-msgrcv(idCola,&buffer,sizeof(buffer),canalLectura,0);
+msgrcv(idCola, &buffer, sizeof(buffer), canalLectura, 0);
 ```
 
 ### 6 Eliminar cola
 ```
-msgctl(idCola,IPC_RMID,NULL); //Elimina Cola (Hacer donde se creo)
+msgctl(idCola, IPC_RMID, NULL); //Elimina Cola (Hacer donde se creo)
 ```
 
 ## Practica 3 - //TO DO
+## Memoria compartida (Shared memory)
+
+### 1 Acceso memoria compartida
+```
+Importante -> #define CLAVE 0x12345678L
+int idCola;
+```
+
+Crear
+```
+idCola = shget(CLAVE, 1024, 0666 | IPC_CREAT);
+```
+
+Acceder
+```
+idCola = shget(CLAVE, 1024, 0666);
+```
+
+### 2 Obtener puntero de memoria
+
+Como char
+```
+char *punteroChar;
+
+punteroChar = (char *)shmat(idMem, NULL, 0);
+```
+
+Como Int
+```
+int *punteroInt;
+
+punteroInt = (int *)shmat(idMem, NULL, 0);
+```
+
+Como estructura
+```
+struct Msg{
+	char[5] a
+	int b
+	int c
+};
+
+struct Msg *punteroMsg
+
+punteroMsg = (Msg *)shmat(idMem, NULL,0);
+```
+
+### 3 Escritura/Lectura en memoria
+(Se mostrara como realizar la escritura, la lectura sera equivalente si intercambiamos las variables puntero y dato de lugar)
+
+Como char
+```
+char dataChar[10]
+strcpy(punteroChar, dataChar);
+```
+
+Como Int -> Usaremos [0] en el puntero para saltar de int en int en la memoria
+```
+Int dataInt;
+punteroInt[0] = dataInt;
+```
+
+Como estructura
+```
+struct Msg dataMsg;
+
+strcpy(punteroMsg[0].a, dataMsg.a)
+punteroMsg[0].b = dataMsg.b
+punteroMsg[0].c = dataMsg.c
+```
+
+### Cerrar y Borrar Memoria
+```
+shmdet(puntero)
+shmctl(idMem,IPC_RMID)
+```
