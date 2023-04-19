@@ -184,7 +184,7 @@ msgrcv(idCola, &buffer, sizeof(buffer), canalLectura, 0);
 msgctl(idCola, IPC_RMID, NULL); //Elimina Cola (Hacer donde se creo)
 ```
 
-## Practica 3 - //TO DO
+## Practica 3
 ## Memoria compartida (Shared memory)
 
 ### 1 Acceso memoria compartida
@@ -261,3 +261,5 @@ punteroMsg[0].c = dataMsg.c
 shmdet(puntero)
 shmctl(idMem,IPC_RMID)
 ```
+
+## Semaforos //TO DO
