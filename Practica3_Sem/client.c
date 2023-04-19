@@ -13,7 +13,7 @@
 
 // idSem = semget(SEM_KEY,cantidad_semaforos,0666 | IPC_CREAT) --> Crear semaforo
 // idSem = semget(SEM_KEY,cantidad_semaforos,0666 | IPC_CREAT) --> Acceder a semaforos
-// semctl(idSem, numero_semaforo(0/1),comando,opciones(Opcional))
+// semctl(idSem, numero_semaforo(0/1/2),comando,opciones(Opcional))
 // semop(idSem,*sops,catidad de operaciones)
 
 //ej: {{0,1,0},{1,-1,0}
@@ -28,6 +28,17 @@
 //scanf
 //fgetc(stdin);
 //fgets
+
+//IMPORTANTE
+
+//User sscanf para pasar de string a int con cierto formato:
+
+//sscanf(str,"<%d>",&num) --> Guardamos en num el intero que esta entre las dos flechas
+
+//Usar sprintf para pasar de int a string con cierto formato:
+
+//sprintf(str,<%d>,num); --> Guardamos en el string, el entero junto con dos flechas
+
 
 #define SEM_KEY 0x78997795L
 #define CLAVE 0x78997795L

@@ -1,0 +1,4068 @@
+1681735435: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681735435: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681735435: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681735435: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 32324  bytes 35341652 (35.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 14743  bytes 1497825 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 51454  bytes 63258154 (63.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 19321  bytes 3165705 (3.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3158  bytes 1361243 (1.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3158  bytes 1361243 (1.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681735435: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681735435: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681735435: 
+La máquina está ya identificada.
+1681735435: RX: <OK Accepted>
+1681735438: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681735438: RX: <NEW>
+1681735438: 
+***************************************************
+El usuario no tiene un password público registrado.
+Por favor, confirme el password para darlo de alta.
+[5mEl password debe recordarlo para futuras sesiones.[0m
+Utilice una secuencia de caracteres personal privados.
+En el servidor se guardará una versión encriptada.
+Si no está de acuerdo con el password que ha utilizado
+interrumpa el proceso y comience de nuevo el registro.
+Posteriormente será más complicado modificarlo. Tendrá.
+que ponerse en contacto con el administrador:
+                 armando.ferro@ehu.eus
+***************************************************
+1681735443: TX: <CREATEPWD bmmNS3EF+5EHa->
+1681735443: [5m
+LOGIN: Registrado password público <bmmNS3EF+5EHa->.[0m
+1681735443: RX: <DONE>
+1681735443: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681735443: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681735443: RX: <REGISTERED>
+1681735443: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735443: COMMAND <cp ./client.? .trazas-3>
+1681735443: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735443: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735443: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735483: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735483: COMMAND <cp ./client.? .trazas-3>
+1681735483: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735483: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735484: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735508: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681735508: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681735508: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681735508: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 32600  bytes 35388077 (35.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15075  bytes 1532504 (1.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 51738  bytes 63325839 (63.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 19657  bytes 3227127 (3.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3304  bytes 1441981 (1.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3304  bytes 1441981 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681735508: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681735508: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681735508: 
+La máquina está ya identificada.
+1681735508: RX: <OK Accepted>
+1681735508: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681735508: RX: <OK>
+1681735508: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681735508: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681735508: RX: <REGISTERED>
+1681735508: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735508: COMMAND <cp ./client.? .trazas-3>
+1681735508: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735508: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735508: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735514: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681735514: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681735514: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681735514: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681735529: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681735529: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <3> .
+
+*************************************************[0m
+1681735529: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1681735529: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681735529: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681735555: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681735555: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681735555: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681735555: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681735570: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681735570: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <3> .
+
+*************************************************[0m
+1681735570: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1681735570: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681735570: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681735808: INTENTO DE CONEXION DIA:17 MES:4 HORA:14:50m.
+1681735808: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735808: COMMAND <cp ./client.? .trazas-3>
+1681735808: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735808: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h50\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735809: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735870: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735870: COMMAND <cp ./client.? .trazas-3>
+1681735870: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735870: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h50\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735871: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735876: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681735877: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681735877: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681735877: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 32819  bytes 35413463 (35.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15321  bytes 1568643 (1.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 51987  bytes 63369510 (63.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 19932  bytes 3285044 (3.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4040  bytes 1848989 (1.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4040  bytes 1848989 (1.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681735877: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681735877: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681735877: 
+La máquina está ya identificada.
+1681735877: RX: <OK Accepted>
+1681735877: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681735877: RX: <OK>
+1681735877: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681735877: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681735877: RX: <REGISTERED>
+1681735877: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681735877: COMMAND <cp ./client.? .trazas-3>
+1681735877: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681735877: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h51\n" | 	  ftp -n 2>&1 > /dev/null>
+1681735877: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681735879: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681735879: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681735879: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681735879: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681735894: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681735894: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <3> .
+
+*************************************************[0m
+1681735894: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1681735894: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681735894: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681735895: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736148: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736148: COMMAND <cp ./client.? .trazas-3>
+1681736148: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736148: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h51\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736149: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736156: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681736156: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681736156: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681736156: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 32907  bytes 35425390 (35.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15404  bytes 1583224 (1.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 52107  bytes 63390218 (63.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20047  bytes 3308555 (3.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4599  bytes 2157636 (2.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4599  bytes 2157636 (2.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681736156: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681736156: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681736156: 
+La máquina está ya identificada.
+1681736156: RX: <OK Accepted>
+1681736156: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681736156: RX: <OK>
+1681736156: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681736156: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681736156: RX: <REGISTERED>
+1681736156: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736156: COMMAND <cp ./client.? .trazas-3>
+1681736156: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736156: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h55\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736157: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736159: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736159: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736159: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736159: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736174: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736174: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <3> .
+
+*************************************************[0m
+1681736174: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1681736174: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736174: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736201: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736201: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736201: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736201: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736205: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681736208: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681736211: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681736211: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736211: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736288: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681736288: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736288: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681736298: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681736298: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736298: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681736298: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736298: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736306: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736306: COMMAND <cp ./client.? .trazas-3>
+1681736306: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736306: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h55\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736306: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736308: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681736308: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681736308: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681736308: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 32968  bytes 35429843 (35.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15465  bytes 1595592 (1.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 52182  bytes 63400616 (63.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20122  bytes 3326878 (3.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4902  bytes 2324788 (2.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4902  bytes 2324788 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681736308: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681736308: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681736308: 
+La máquina está ya identificada.
+1681736308: RX: <OK Accepted>
+1681736308: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681736308: RX: <OK>
+1681736308: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681736308: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681736308: RX: <REGISTERED>
+1681736308: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736308: COMMAND <cp ./client.? .trazas-3>
+1681736308: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736308: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736308: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736311: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736311: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736311: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736311: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736316: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681736319: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681736322: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681736322: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736322: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736325: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681736325: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736325: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681736327: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736342: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736342: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681736342: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681736342: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736342: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736385: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736385: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736385: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736385: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736388: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681736391: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681736394: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681736394: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736394: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736398: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681736398: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736398: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681736400: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736415: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736415: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681736415: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681736415: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736415: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736518: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736518: COMMAND <cp ./client.? .trazas-3>
+1681736518: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736518: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-14h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736519: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736531: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681736531: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681736531: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681736531: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 33052  bytes 35438561 (35.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15549  bytes 1611622 (1.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 52285  bytes 63417083 (63.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20226  bytes 3351127 (3.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 5349  bytes 2571494 (2.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5349  bytes 2571494 (2.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681736531: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681736531: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681736531: 
+La máquina está ya identificada.
+1681736531: RX: <OK Accepted>
+1681736531: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681736531: RX: <OK>
+1681736531: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681736531: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681736531: RX: <REGISTERED>
+1681736531: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736532: COMMAND <cp ./client.? .trazas-3>
+1681736532: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736532: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h02\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736532: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736538: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736538: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736538: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736538: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736540: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681736543: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681736546: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681736546: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736546: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736553: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681736553: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736553: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681736555: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736570: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736570: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681736570: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681736570: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736570: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736832: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:7m.
+1681736832: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681736832: COMMAND <cp ./client.? .trazas-3>
+1681736832: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681736832: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h07\n" | 	  ftp -n 2>&1 > /dev/null>
+1681736833: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681736949: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681736949: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32782      ubuntu     600        61440      2          dest         
+0x00000000 32783      ubuntu     600        61440      2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+0x00000000 61         ubuntu     600        1048576    2          dest         
+0x00000000 62         ubuntu     600        8228864    2          dest         
+0x00000000 63         ubuntu     600        7614464    2          dest         
+
+1681736949: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681736949: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736951: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681736954: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681736957: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681736957: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736957: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681736960: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681736960: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736960: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681736963: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681736978: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681736978: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681736978: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681736978: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681736978: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737132: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:12m.
+1681737132: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737132: COMMAND <cp ./client.? .trazas-3>
+1681737132: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737132: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h12\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737135: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681737359: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737359: COMMAND <cp ./client.? .trazas-3>
+1681737359: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737359: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h12\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737359: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681737369: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681737369: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681737369: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681737369: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 43986  bytes 44152449 (44.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 23638  bytes 2687463 (2.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 63424  bytes 73141169 (73.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 28394  bytes 5077596 (5.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 7023  bytes 3497216 (3.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7023  bytes 3497216 (3.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681737369: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681737369: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681737369: 
+La máquina está ya identificada.
+1681737369: RX: <OK Accepted>
+1681737369: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681737369: RX: <OK>
+1681737369: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681737369: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681737369: RX: <REGISTERED>
+1681737369: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737369: COMMAND <cp ./client.? .trazas-3>
+1681737369: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737369: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737370: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681737372: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681737372: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32787      ubuntu     600        1048576    2          dest         
+0x00000000 32788      ubuntu     600        8228864    2          dest         
+0x00000000 32789      ubuntu     600        7614464    2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681737372: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681737372: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737377: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737380: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681737383: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681737383: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737383: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737388: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681737388: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737388: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681737390: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737390: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737391: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681737391: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681737391: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681737391: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681737391: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681737391: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681737391: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <1> .
+
+*************************************************[0m
+1681737391: 
+[5m-------------------------------------------------------
+ :nok> La clave <34> recibida del ejercicio 1 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681737394: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681737394: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737394: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737490: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737490: COMMAND <cp ./client.? .trazas-3>
+1681737490: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737490: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737490: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681737509: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681737509: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681737509: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681737509: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.38.252  netmask 255.255.192.0  destination 10.254.38.252
+        inet6 fe80::ac90:cb9a:45df:df45  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::8b57:feee:75c4:4817  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 44266  bytes 44168838 (44.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24003  bytes 2723261 (2.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 63715  bytes 73180588 (73.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 28770  bytes 5143429 (5.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 7303  bytes 3652056 (3.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7303  bytes 3652056 (3.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681737509: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681737509: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681737509: 
+La máquina está ya identificada.
+1681737509: RX: <OK Accepted>
+1681737509: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681737509: RX: <OK>
+1681737509: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681737509: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681737509: RX: <REGISTERED>
+1681737509: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737509: COMMAND <cp ./client.? .trazas-3>
+1681737510: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737510: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h18\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737510: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681737516: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681737516: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32787      ubuntu     600        1048576    2          dest         
+0x00000000 32788      ubuntu     600        8228864    2          dest         
+0x00000000 32789      ubuntu     600        7614464    2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681737516: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681737516: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737517: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737520: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681737523: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681737523: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737523: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737525: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681737525: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737525: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681737527: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737542: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681737542: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681737542: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681737542: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737542: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737590: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681737590: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32787      ubuntu     600        1048576    2          dest         
+0x00000000 32788      ubuntu     600        8228864    2          dest         
+0x00000000 32789      ubuntu     600        7614464    2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681737590: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681737590: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737593: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737596: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681737599: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681737599: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737599: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737606: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681737606: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737606: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681737608: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737623: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681737623: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681737623: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681737623: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737623: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737735: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681737735: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32787      ubuntu     600        1048576    2          dest         
+0x00000000 32788      ubuntu     600        8228864    2          dest         
+0x00000000 32789      ubuntu     600        7614464    2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681737735: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681737735: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737737: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737740: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681737743: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681737743: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737743: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737747: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681737747: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737747: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681737748: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681737748: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681737749: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681737749: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681737749: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681737749: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681737749: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681737749: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681737749: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <1> .
+
+*************************************************[0m
+1681737749: 
+[5m-------------------------------------------------------
+ :nok> La clave <34> recibida del ejercicio 1 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681737752: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681737752: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681737752: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681737810: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:23m.
+1681737810: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681737810: COMMAND <cp ./client.? .trazas-3>
+1681737810: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681737810: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h23\n" | 	  ftp -n 2>&1 > /dev/null>
+1681737810: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681738042: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681738042: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 32787      ubuntu     600        1048576    2          dest         
+0x00000000 32788      ubuntu     600        8228864    2          dest         
+0x00000000 32789      ubuntu     600        7614464    2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681738042: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681738042: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738045: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681738048: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681738051: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681738051: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738051: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738054: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681738054: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738054: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681738056: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738071: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681738071: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681738071: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681738071: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738071: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738110: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:28m.
+1681738110: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681738110: COMMAND <cp ./client.? .trazas-3>
+1681738110: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681738110: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h28\n" | 	  ftp -n 2>&1 > /dev/null>
+1681738110: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681738410: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:33m.
+1681738410: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681738410: COMMAND <cp ./client.? .trazas-3>
+1681738410: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681738410: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h33\n" | 	  ftp -n 2>&1 > /dev/null>
+1681738410: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681738412: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681738412: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681738412: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681738412: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738414: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681738417: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681738420: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681738420: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738420: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738424: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681738424: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738424: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681738426: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738441: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681738441: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681738441: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681738441: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738441: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738521: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681738521: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681738521: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681738521: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738524: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681738527: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681738530: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681738530: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738530: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738533: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681738533: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738533: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681738535: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681738550: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681738550: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681738550: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681738550: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681738550: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681738710: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:38m.
+1681738710: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681738710: COMMAND <cp ./client.? .trazas-3>
+1681738710: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681738710: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h38\n" | 	  ftp -n 2>&1 > /dev/null>
+1681738710: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681739010: INTENTO DE CONEXION DIA:17 MES:4 HORA:15:43m.
+1681739010: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681739010: COMMAND <cp ./client.? .trazas-3>
+1681739010: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681739010: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1681739010: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681739015: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681739015: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 12         ubuntu     600        524288     2          dest         
+0x00000000 52         ubuntu     600        173328     2          dest         
+0x00000000 59         ubuntu     600        16777216   2          dest         
+
+1681739015: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681739015: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681739020: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681739023: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681739026: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681739026: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681739026: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681739029: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681739029: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681739029: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681739032: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681739047: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681739047: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681739047: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681739047: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681739047: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-17 14:21 (tty2)
+1681739051: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681739051: COMMAND <cp ./client.? .trazas-3>
+1681739051: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681739051: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-17-4-15h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1681739051: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681821493: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681821493: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681821493: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681821493: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 723  bytes 764900 (764.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 513  bytes 87247 (87.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 169  bytes 15884 (15.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 169  bytes 15884 (15.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681821493: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681821493: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681821493: 
+La máquina está ya identificada.
+1681821493: RX: <OK Accepted>
+1681821495: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681821495: RX: <OK>
+1681821495: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681821495: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681821495: RX: <REGISTERED>
+1681821495: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681821495: COMMAND <cp ./client.? .trazas-3>
+1681821495: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681821495: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-14h38\n" | 	  ftp -n 2>&1 > /dev/null>
+1681821495: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681821498: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821498: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+
+1681821498: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821498: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821501: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821504: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821507: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821507: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821507: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821511: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821511: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821511: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821513: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821528: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681821528: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681821528: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681821528: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821528: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821577: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821577: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+
+1681821577: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821577: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821579: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821582: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821585: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821585: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821585: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821589: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821589: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821589: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821592: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821592: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821597: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681821597: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681821597: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681821597: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821597: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821615: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821615: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+
+1681821615: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821615: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821618: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821621: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821624: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821624: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821624: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821627: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821627: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821627: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821630: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821630: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821635: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681821635: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681821635: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681821635: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821635: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821714: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821714: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+
+1681821714: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821714: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821717: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821720: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821723: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821723: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821723: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821726: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821726: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821726: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821728: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821728: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821733: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681821733: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681821733: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681821733: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821733: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821761: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821761: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+
+1681821761: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821761: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821765: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821767: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821770: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821770: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821770: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821775: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821775: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821775: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821777: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821777: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821780: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681821780: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681821780: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681821780: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681821780: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681821780: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681821780: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <1> .
+
+*************************************************[0m
+1681821780: 
+[5m-------------------------------------------------------
+ :nok> La clave <34> recibida del ejercicio 1 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681821783: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681821783: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821783: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821795: INTENTO DE CONEXION DIA:18 MES:4 HORA:14:43m.
+1681821795: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681821795: COMMAND <cp ./client.? .trazas-3>
+1681821795: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681821795: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-14h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1681821795: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681821878: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681821878: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+
+1681821878: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681821878: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821883: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681821886: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681821889: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681821889: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821889: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681821893: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681821893: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821893: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681821895: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681821910: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681821910: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681821910: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681821910: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681821910: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822094: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681822094: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+
+1681822094: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681822094: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822095: INTENTO DE CONEXION DIA:18 MES:4 HORA:14:48m.
+1681822097: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681822100: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681822103: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681822103: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822103: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822106: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681822106: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822106: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681822108: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822125: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681822125: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681822125: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681822125: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822125: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822395: INTENTO DE CONEXION DIA:18 MES:4 HORA:14:53m.
+1681822395: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681822395: COMMAND <cp ./client.? .trazas-3>
+1681822395: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681822395: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-14h53\n" | 	  ftp -n 2>&1 > /dev/null>
+1681822395: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681822445: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681822445: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+0x00000000 38         ubuntu     600        1048576    2          dest         
+0x00000000 39         ubuntu     600        8228864    2          dest         
+0x00000000 40         ubuntu     600        7614464    2          dest         
+
+1681822445: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681822445: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822447: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681822450: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681822453: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681822453: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822453: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822456: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681822456: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822456: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681822459: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822474: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681822474: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681822474: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681822474: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822474: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822494: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681822494: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+0x00000000 38         ubuntu     600        1048576    2          dest         
+0x00000000 39         ubuntu     600        8228864    2          dest         
+0x00000000 40         ubuntu     600        7614464    2          dest         
+
+1681822494: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681822494: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822497: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681822500: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681822503: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681822503: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822503: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822506: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681822506: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822506: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681822508: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822523: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681822523: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681822523: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681822523: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822523: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822695: INTENTO DE CONEXION DIA:18 MES:4 HORA:14:58m.
+1681822695: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681822695: COMMAND <cp ./client.? .trazas-3>
+1681822695: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681822695: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-14h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1681822695: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681822725: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681822725: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 26         ubuntu     666        1024       1          dest         
+0x00000000 28         ubuntu     666        1024       1          dest         
+0x00000000 30         ubuntu     666        1024       1          dest         
+0x00000000 38         ubuntu     600        1048576    2          dest         
+0x00000000 39         ubuntu     600        8228864    2          dest         
+0x00000000 40         ubuntu     600        7614464    2          dest         
+
+1681822725: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681822725: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822727: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681822730: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681822733: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681822733: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822733: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822736: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681822736: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822736: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681822737: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822753: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681822753: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681822753: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681822753: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822753: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822909: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681822909: COMMAND <cp ./client.? .trazas-3>
+1681822909: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681822909: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-14h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1681822909: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681822911: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681822912: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681822912: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681822912: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 17218  bytes 13886907 (13.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10728  bytes 1893973 (1.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1763  bytes 212150 (212.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1763  bytes 212150 (212.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681822912: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681822912: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681822912: 
+La máquina está ya identificada.
+1681822912: RX: <OK Accepted>
+1681822912: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681822912: RX: <OK>
+1681822912: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681822912: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681822912: RX: <REGISTERED>
+1681822912: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681822912: COMMAND <cp ./client.? .trazas-3>
+1681822912: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681822912: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-15h01\n" | 	  ftp -n 2>&1 > /dev/null>
+1681822912: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681822917: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681822917: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 38         ubuntu     600        1048576    2          dest         
+0x00000000 39         ubuntu     600        8228864    2          dest         
+0x00000000 40         ubuntu     600        7614464    2          dest         
+
+1681822917: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681822917: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822920: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681822923: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681822926: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681822926: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822926: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681822936: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681822936: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822936: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681822940: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681822956: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681822956: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1681822956: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1681822956: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681822956: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681823078: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681823078: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 22         ubuntu     600        173328     2          dest         
+0x00000000 38         ubuntu     600        1048576    2          dest         
+0x00000000 39         ubuntu     600        8228864    2          dest         
+0x00000000 40         ubuntu     600        7614464    2          dest         
+
+1681823078: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681823078: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681823084: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681823087: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681823090: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681823090: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681823090: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681823093: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681823093: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681823093: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681823095: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681823095: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681823096: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681823096: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681823096: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681823096: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681823096: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681823096: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681823096: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <128>.
+********************************************[0m
+1681823099: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681823099: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681823099: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-18 12:29 (tty2)
+1681823140: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681823140: COMMAND <cp ./client.? .trazas-3>
+1681823140: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681823140: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-18-4-15h01\n" | 	  ftp -n 2>&1 > /dev/null>
+1681823140: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681884709: COMMAND <cp ./monitor3 /tmp/.monitor3>
+1681884709: COMMAND <cp -f /tmp/.monitor3 ./monitor3>
+1681884709: COMMAND <uname -a >> .trazas-3/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1681884709: COMMAND <ifconfig 2>&1 >> .trazas-3/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.39.221  netmask 255.255.192.0  destination 10.254.39.221
+        inet6 fe80::783d:d5d1:93bf:24d2  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::ce3d:1023:be55:4e4  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 10  bytes 1644 (1.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 14  bytes 960 (960.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 3360  bytes 4781452 (4.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1724  bytes 151345 (151.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 342  bytes 43849 (43.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 342  bytes 43849 (43.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1681884709: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-3/alumno-78997795V>
+MACHINE-ID: 1681884709: COMMAND <cat /etc/machine-id >> .trazas-3/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1681884709: 
+La máquina está ya identificada.
+1681884709: RX: <OK Accepted>
+1681884712: TX: <CHECKPWD bmmNS3EF+5EHa->
+1681884712: RX: <OK>
+1681884712: 
+********************************************
+           INICIANDO SESION
+********************************************
+1681884712: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1681884712: RX: <REGISTERED>
+1681884712: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681884712: COMMAND <cp ./client.? .trazas-3>
+1681884712: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681884712: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h11\n" | 	  ftp -n 2>&1 > /dev/null>
+1681884712: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681884719: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681884719: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681884719: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681884719: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884721: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884724: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681884727: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681884727: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884727: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884731: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681884731: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884731: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681884734: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884734: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884735: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681884735: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681884735: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681884735: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681884735: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681884735: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681884735: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <128>.
+********************************************[0m
+1681884738: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681884738: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884738: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884794: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681884794: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681884794: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681884794: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884798: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884801: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681884804: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681884804: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884804: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884807: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681884807: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884807: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681884811: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884811: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884812: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681884812: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681884812: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681884812: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681884812: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681884812: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681884812: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <128>.
+********************************************[0m
+1681884815: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681884815: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884815: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884819: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1681884819: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884819: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681884821: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1681884821: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <953>.
+********************************************[0m
+1681884824: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1681884824: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884824: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884863: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681884863: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681884863: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681884863: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884865: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884868: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681884871: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681884871: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884871: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884876: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681884876: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884876: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681884879: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681884879: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681884880: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681884880: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681884880: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681884880: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681884880: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681884880: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681884880: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <128>.
+********************************************[0m
+1681884883: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681884883: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681884883: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884891: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1681884891: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884891: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681884893: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1681884893: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <953>.
+********************************************[0m
+1681884896: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1681884896: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884896: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884902: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1681884902: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884902: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681884904: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <7>.
+*******************************************************
+1681884904: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <402>.
+********************************************[0m
+1681884907: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1681884907: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681884907: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681884997: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1681884997: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681884997: 
+[5m********************************************
+:ok> Ejercicio 1 bien realizado pendiente de obtener resultados.
+********************************************[0m
+1681884997: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681885000: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681885003: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <886>.
+********************************************[0m
+1681885006: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1681885006: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885006: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885008: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1681885008: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885008: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x78997795> por el proceso <client>.
+----------------------------------------------------------------------------------
+1681885011: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------
+1681885011: 
+--------------------------------------------------------------------------------------------------
+ENGANCHADO. Esperando 5 segundos a que se DESenganche de la memoria compartida <0x78997795> el proceso <client>.
+--------------------------------------------------------------------------------------------------
+1681885012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <67>.
+********************************************[0m
+1681885012: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <2>.
+*******************************************************
+1681885012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <101>.
+********************************************[0m
+1681885012: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <5>.
+*******************************************************
+1681885012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <940>.
+********************************************[0m
+1681885012: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1681885012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <128>.
+********************************************[0m
+1681885012: INTENTO DE CONEXION DIA:19 MES:4 HORA:8:16m.
+1681885012: 
+*************************************************
+:ok> CONTEXTO del ejercicio 2 preparado.
+*************************************************
+1681885012: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885012: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885017: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1681885017: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885017: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681885019: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <6>.
+*******************************************************
+1681885019: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <953>.
+********************************************[0m
+1681885022: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1681885022: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885022: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885025: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1681885025: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885025: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681885027: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <7>.
+*******************************************************
+1681885027: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <402>.
+********************************************[0m
+1681885030: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1681885030: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885030: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885033: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1681885033: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885033: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885033: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885035: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885038: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1681885038: 
+[5m-------------------------------------------------------
+ :nok> La clave <0> recibida del ejercicio 8 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681885038: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1681885038: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1681885038: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885038: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885038: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885240: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1681885240: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885240: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885240: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885244: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885247: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1681885247: 
+[5m-------------------------------------------------------
+ :nok> La clave <0> recibida del ejercicio 8 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681885247: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1681885247: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1681885247: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885247: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885247: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885287: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1681885287: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885287: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885287: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885291: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885294: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1681885294: 
+[5m-------------------------------------------------------
+ :nok> La clave <0> recibida del ejercicio 8 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681885294: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <8> .
+
+*************************************************[0m
+1681885294: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1681885294: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885294: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885294: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885312: INTENTO DE CONEXION DIA:19 MES:4 HORA:8:21m.
+1681885312: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681885312: COMMAND <cp ./client.? .trazas-3>
+1681885312: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681885312: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h21\n" | 	  ftp -n 2>&1 > /dev/null>
+1681885312: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681885414: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1681885414: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885414: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885414: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885417: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885420: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1681885420: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <431>.
+********************************************[0m
+1681885420: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <9>.
+*******************************************************
+1681885420: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <9> es <672>.
+********************************************[0m
+1681885420: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1681885420: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885420: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885420: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885463: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1681885463: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885463: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885463: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885466: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885466: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885466: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885469: 
+[5m-------------------------------------------------------
+ :nok> La clave <0> recibida del ejercicio 10 NO ES CORRECTA.
+-------------------------------------------------------[0m
+1681885469: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <10> .
+
+*************************************************[0m
+1681885469: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 6.
+
+*************************************************[0m
+1681885469: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885469: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885469: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885542: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1681885542: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885542: COMMAND <ipcs -m >> .trazas-3/alumno-78997795V 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+1681885542: 
+-------------------------------------------------------
+ Esperando 10 segundos a la operación del semáforo <0x78997795> por el proceso <client>.
+-------------------------------------------------------
+1681885546: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885546: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885546: 
+-------------------------------------------------------
+Identificada operación sobre semáforo 0x78997795.
+Esperando 5 segundos para acceso a sección crítica.
+-------------------------------------------------------
+1681885550: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <10> es <341>.
+********************************************[0m
+1681885550: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <11>.
+*******************************************************
+1681885550: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <11> es <286>.
+********************************************[0m
+1681885550: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1681885550: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885550: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885550: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885586: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1681885586: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885586: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885586: 
+----------------------------------------------------------------------------------
+ Se ha creado de NUEVO el segmento de memoria. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1681885589: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681885600: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681885600: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <12> .
+
+*************************************************[0m
+1681885600: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1681885600: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885612: INTENTO DE CONEXION DIA:19 MES:4 HORA:8:26m.
+1681885612: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681885612: COMMAND <cp ./client.? .trazas-3>
+1681885612: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681885612: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h26\n" | 	  ftp -n 2>&1 > /dev/null>
+1681885612: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681885678: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1681885678: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885678: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885678: 
+----------------------------------------------------------------------------------
+ Se ha creado de NUEVO el segmento de memoria. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1681885681: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681885692: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+-------------------------------------------------------
+1681885692: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <12> .
+
+*************************************************[0m
+1681885692: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 7.
+
+*************************************************[0m
+1681885692: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885716: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 7.
+
+*************************************************
+
+
+1681885716: COMMAND <ipcrm -S 0x78997795 > /dev/null 2>&1>
+1681885716: COMMAND <ipcrm -M 0x78997795 > /dev/null 2>&1>
+1681885716: 
+----------------------------------------------------------------------------------
+ Se ha creado de NUEVO el segmento de memoria. Proceder a iniciar el ejercicio.
+----------------------------------------------------------------------------------
+1681885719: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x78997795> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1681885720: COMMAND <ipcs >> .trazas-3/alumno-78997795V 2>&1>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+0x78997795 35         ubuntu     666        1024       0                       
+
+------ Matrices semáforo -------
+key        semid      propietario perms      nsems     
+0x78997795 14         ubuntu     666        1         
+
+1681885720: 
+-------------------------------------------------------
+Se dispone de 2 segundos para destruir los recursos utilizados
+-------------------------------------------------------
+1681885722: COMMAND <ipcs >> .trazas-3/alumno-78997795V 2>&1>
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          ubuntu     600        524288     2          dest         
+0x00000000 18         ubuntu     600        173328     2          dest         
+
+------ Matrices semáforo -------
+key        semid      propietario perms      nsems     
+
+1681885722: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <12> es <563>.
+********************************************[0m
+1681885722: 
+*************************************************
+:ok> CONTEXTO del ejercicio 7 preparado.
+*************************************************
+1681885722: COMMAND <who >> .trazas-3/alumno-78997795V>
+ubuntu   tty2         2023-04-19 08:08 (tty2)
+1681885912: INTENTO DE CONEXION DIA:19 MES:4 HORA:8:31m.
+1681885912: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681885912: COMMAND <cp ./client.? .trazas-3>
+1681885912: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681885912: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h31\n" | 	  ftp -n 2>&1 > /dev/null>
+1681885912: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681886212: INTENTO DE CONEXION DIA:19 MES:4 HORA:8:36m.
+1681886212: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681886212: COMMAND <cp ./client.? .trazas-3>
+1681886212: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681886212: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h36\n" | 	  ftp -n 2>&1 > /dev/null>
+1681886212: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
+1681886287: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-3" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1681886287: COMMAND <cp ./client.? .trazas-3>
+1681886287: COMMAND <tar zcf save_file-78997795V .trazas-3 > /dev/null>
+1681886287: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-3\nput save_file-78997795V 78997795V-19-4-8h36\n" | 	  ftp -n 2>&1 > /dev/null>
+1681886287: COMMAND <test -f .trazas-3/.clean_bck.tz && rm .trazas-3/.clean_bck.tz>
