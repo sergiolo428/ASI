@@ -22,7 +22,7 @@ void serverMulti();
 
 int main(int argc, char** argv) {
     
-    
+    serverMulti();
     
     return (EXIT_SUCCESS);
 }
@@ -51,14 +51,7 @@ void serverCola(){
         
     //Podemos hacer el while anterior usando multiprocesos:
     
-    //while(1){
-    //clientfd = accept
-    //Proceso hijo
-    //Operacion
-    //exit(EXIT_SUCCESS)
-    //proceso padre
-    //wait?????
-    //close(clientfd);
+    //while(1){ //clientfd = accept //Proceso hijo //Operacion //exit(EXIT_SUCCESS) //proceso padre //wait????? //close(clientfd);
     
         while((n=read(clientfd,buffer,SIZE))>0){
             buffer[n-1]='\0';
@@ -85,9 +78,14 @@ void serverMulti(){
     
     socklen_t clientAddrLen = sizeof(clientAddrLen);
     
+    sockfd = socket(AF_INET,SOCK_STREAM,0);
+    
     char buffer[SIZE];
     
-    bind(sockfd,(struct sockaddr *) &clientAddr,&clientAddrLen);
+    bind(sockfd,(struct sockaddr *) &serverAddr,sizeof(serverAddr));
+    
+    
+    
     listen(sockfd,3);
     
     while(1){
@@ -110,7 +108,7 @@ void serverMulti(){
             exit(EXIT_SUCCESS);
         }else{
             //Padre
-            close(clientfds);
+            close(clientfd);
         }
     }
     
