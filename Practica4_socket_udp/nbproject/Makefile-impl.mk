@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=practica4_socket_udp
+PROJECTNAME=Practica4_socket_udp
 
 # Active Configuration
 DEFAULTCONF=Debug

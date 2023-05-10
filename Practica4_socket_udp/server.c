@@ -1,14 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/main.c to edit this template
- */
-
-/* 
- * File:   server.c
- * Author: ubuntu
- *
- * Created on 3 de mayo de 2023, 8:04
- */
+/*Sergio Lopez Alejandro server UDP*/
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -2184,3 +2184,63 @@ ubuntu   tty2         2023-05-03 07:59 (tty2)
 1683101549: COMMAND <tar zcf save_file-78997795V .trazas-4 > /dev/null>
 1683101549: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-4\nput save_file-78997795V 78997795V-3-5-9h57\n" | 	  ftp -n 2>&1 > /dev/null>
 1683101549: COMMAND <test -f .trazas-4/.clean_bck.tz && rm .trazas-4/.clean_bck.tz>
+1683701036: COMMAND <cp ./monitor4 /tmp/.monitor4>
+1683701036: COMMAND <cp -f /tmp/.monitor4 ./monitor4>
+1683701036: COMMAND <uname -a >> .trazas-4/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683701036: COMMAND <ifconfig 2>&1 >> .trazas-4/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.45.187  netmask 255.255.192.0  destination 10.254.45.187
+        inet6 fe80::96c0:74d8:dbbb:572d  prefixlen 126  scopeid 0x20<link>
+        inet6 fe80::f87c:68bd:9f2d:ee15  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 9922  bytes 11641614 (11.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4436  bytes 413889 (413.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 179594  bytes 267422789 (267.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 28786  bytes 2408891 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 3468  bytes 1520883 (1.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3468  bytes 1520883 (1.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683701036: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-4/alumno-78997795V>
+MACHINE-ID: 1683701036: COMMAND <cat /etc/machine-id >> .trazas-4/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683701036: 
+La máquina está ya identificada.
+1683701036: RX: <OK Accepted>
+1683701038: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683701038: RX: <OK>
+1683701038: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683701038: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683701038: RX: <REGISTERED>
+1683701038: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683701038: COMMAND <cp ./client.? .trazas-4>
+1683701038: COMMAND <tar zcf save_file-78997795V .trazas-4 > /dev/null>
+1683701038: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-4\nput save_file-78997795V 78997795V-10-5-8h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1683701038: COMMAND <test -f .trazas-4/.clean_bck.tz && rm .trazas-4/.clean_bck.tz>

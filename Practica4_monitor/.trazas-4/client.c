@@ -13,7 +13,7 @@
 void espera();
 
 int main(int argc, char** argv) {
-    /*
+    
     espera(1);
     //------------------------------Ejercicio1------------------------------
     
@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
     serverAddr3.sin_port = htons(3000);
     
     sendto(sockfd3,buffer,strlen(buffer),0,(struct sockaddr *) &serverAddr,servertam);
-    */
+    
     espera(7);
     //------------------------------Ejercicio7------------------------------
     
