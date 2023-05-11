@@ -24,11 +24,17 @@ int main(int argc, char** argv) {
 
     //ejer1();
     //Funciona 2/3s
-    ejer2();
+    
+    
+    //ejer2();
+
+    
+    
+    //ejer2();
     //FUNCIONA
-    //ejer3();
+    ejer3();
     //FUNCIONA
-    //ejer4();
+    ejer4();
     //ejer5();
     return (EXIT_SUCCESS);
 }
@@ -127,15 +133,14 @@ void ejer2(){
     
     bind(sockfd2,(struct sockaddr *) &serverAddr2, sizeof(serverAddr2));
     
-    listen(sockfd2,20);
+    listen(sockfd2,5);
     
     while(1){
         clientfd2 = accept(sockfd2,(struct sockaddr *) &clientAddr2, &tamClient2);
         
+        //pid_t pid;
         if(fork() == 0){
             //Hijo
-            
-            close(sockfd2);
             
             read(clientfd2,&intCode3,sizeof(intCode3));
     
@@ -145,24 +150,17 @@ void ejer2(){
             printf("Enviando: %s.\n",charCode3);
             
             write(clientfd2,charCode3,strlen(charCode3));
-            
-            sleep(1);
-            
+            sleep(5);
             close(clientfd2);
             
-            sleep(3);
-            
-            exit(EXIT_SUCCESS);
+            exit(0);
             
         }else{
             //Padre
             close(clientfd2);
-            sleep(1);
         }
         
     }
-    sleep(1);
-    close(clientfd2);
 }
 
 void ejer1(){

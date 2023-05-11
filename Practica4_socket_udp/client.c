@@ -32,7 +32,7 @@ puerto = strtok(NULL,"");
 //obtener ip:
 struct hostent *ho;
 
-ho = gethostname(dominio);
+ho = gethostbyname(dominio);
 
 serverAddr.sinaddr = ((struct in_addr *) ho->h_addr_list[0]);
 

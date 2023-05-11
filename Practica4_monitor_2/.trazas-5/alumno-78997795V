@@ -4946,3 +4946,4184 @@ ubuntu   tty2         2023-05-10 08:09 (tty2)
 1683703667: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
 1683703667: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-9h17\n" | 	  ftp -n 2>&1 > /dev/null>
 1683703667: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741358: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683741358: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683741358: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683741358: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.45.226  netmask 255.255.192.0  destination 10.254.45.226
+        inet6 fe80::d3a1:c4d5:fcdd:fb0f  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3749:5b79:840b:83c1  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 4  bytes 601 (601.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7  bytes 480 (480.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 799  bytes 894444 (894.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 461  bytes 82295 (82.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 332  bytes 36238 (36.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 332  bytes 36238 (36.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683741358: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683741358: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683741358: 
+La máquina está ya identificada.
+1683741358: RX: <OK Accepted>
+1683741359: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683741360: RX: <OK>
+1683741360: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683741360: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683741360: RX: <REGISTERED>
+1683741360: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741360: COMMAND <cp ./client.? .trazas-5>
+1683741360: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741360: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-19h55\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741362: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741370: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741370: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741370: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741370: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741370: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741370: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741370: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741370: 
+-------------------------------------------------------
+Numero de procesos client (0) incorrecto. Debe ser (1)
+
+-------------------------------------------------------
+1683741370: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741370: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741377: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741377: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741377: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741377: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741377: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741377: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741377: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741377: 
+-------------------------------------------------------
+Numero de procesos client (0) incorrecto. Debe ser (1)
+
+-------------------------------------------------------
+1683741377: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741377: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741384: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741384: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741384: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741384: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741384: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741384: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741384: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741384: 
+-------------------------------------------------------
+Numero de procesos client (0) incorrecto. Debe ser (1)
+
+-------------------------------------------------------
+1683741384: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741384: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741469: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741469: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741469: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741469: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741469: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741469: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741469: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741469: 
+-------------------------------------------------------
+Numero de procesos client (0) incorrecto. Debe ser (1)
+
+-------------------------------------------------------
+1683741469: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741469: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741500: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741500: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741500: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741500: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741500: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741500: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741525: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683741525: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683741525: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683741525: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.45.226  netmask 255.255.192.0  destination 10.254.45.226
+        inet6 fe80::d3a1:c4d5:fcdd:fb0f  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3749:5b79:840b:83c1  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 70  bytes 8423 (8.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 79  bytes 17745 (17.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 877  bytes 906599 (906.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 540  bytes 105524 (105.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 712  bytes 223416 (223.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 712  bytes 223416 (223.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683741525: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683741525: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683741525: 
+La máquina está ya identificada.
+1683741525: RX: <OK Accepted>
+1683741525: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683741525: RX: <OK>
+1683741525: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683741525: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683741525: RX: <REGISTERED>
+1683741525: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741526: COMMAND <cp ./client.? .trazas-5>
+1683741526: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741526: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-19h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741528: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741530: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741530: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741530: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741530: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741530: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741530: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741539: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741539: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741539: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741539: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741539: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741539: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741562: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741562: COMMAND <cp ./client.? .trazas-5>
+1683741562: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741562: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-19h58\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741563: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741565: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683741565: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683741565: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683741565: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.45.226  netmask 255.255.192.0  destination 10.254.45.226
+        inet6 fe80::d3a1:c4d5:fcdd:fb0f  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3749:5b79:840b:83c1  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 138  bytes 14326 (14.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 158  bytes 48851 (48.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 947  bytes 917301 (917.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 622  bytes 143211 (143.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 808  bytes 268351 (268.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 808  bytes 268351 (268.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683741565: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683741565: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683741565: 
+La máquina está ya identificada.
+1683741565: RX: <OK Accepted>
+1683741565: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683741565: RX: <OK>
+1683741565: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683741565: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683741565: RX: <REGISTERED>
+1683741565: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741565: COMMAND <cp ./client.? .trazas-5>
+1683741565: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741565: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-19h59\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741567: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741569: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741569: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741569: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741569: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741569: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741569: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741600: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741600: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741600: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741600: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741600: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741600: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741649: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741649: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741649: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741649: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741649: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741649: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741649: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741649: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741649: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741649: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741659: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741659: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741659: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741659: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741659: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741659: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741659: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741659: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741659: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741659: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741665: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741665: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741665: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741665: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741665: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741665: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741665: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741665: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741665: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741665: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741675: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741675: COMMAND <cp ./client.? .trazas-5>
+1683741675: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741675: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-19h59\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741677: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741684: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683741684: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683741684: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683741684: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.45.226  netmask 255.255.192.0  destination 10.254.45.226
+        inet6 fe80::d3a1:c4d5:fcdd:fb0f  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3749:5b79:840b:83c1  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 215  bytes 20685 (20.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 237  bytes 80189 (80.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 1034  bytes 929789 (929.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 710  bytes 181505 (181.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1082  bytes 400923 (400.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1082  bytes 400923 (400.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683741684: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683741684: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683741684: 
+La máquina está ya identificada.
+1683741684: RX: <OK Accepted>
+1683741684: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683741684: RX: <OK>
+1683741684: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683741684: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683741684: RX: <REGISTERED>
+1683741684: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683741684: COMMAND <cp ./client.? .trazas-5>
+1683741684: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683741684: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-10-5-20h01\n" | 	  ftp -n 2>&1 > /dev/null>
+1683741686: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683741693: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741693: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741693: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741693: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741693: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741693: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741728: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741728: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741728: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741728: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741728: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741728: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741739: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741739: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741739: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741739: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683741739: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741739: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741747: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741747: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741747: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741747: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741747: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741747: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741747: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741747: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741747: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741747: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741817: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741817: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741817: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741817: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741817: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741817: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741817: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741817: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741817: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741817: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741827: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683741830: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683741830: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741830: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683741830: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683741830: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683741830: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683741830: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683741830: 
+-------------------------------------------------------
+Numero de procesos client (1) incorrecto. Debe ser (2)
+
+-------------------------------------------------------
+1683741830: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683741830: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683742010: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683742010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683742010: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683742010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683742010: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <877>.
+********************************************[0m
+1683742010: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683742010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683742010: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683742010: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683742010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683742010: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <62>.
+********************************************[0m
+1683742011: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683742011: 
+-------------------------------------------------------
+Numero de procesos client (4) incorrecto. Debe ser (3)
+
+-------------------------------------------------------
+1683742011: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683742011: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-10 17:43 (tty2)
+1683816870: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683816870: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683816870: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683816870: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        inet6 fe80::3bc2:6c92:2d68:c692  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3c0a:bf78:3c2b:c319  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 22  bytes 3894 (3.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 26  bytes 1943 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 21971  bytes 32537637 (32.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3132  bytes 276888 (276.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 387  bytes 52176 (52.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 387  bytes 52176 (52.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683816870: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683816870: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683816870: 
+La máquina está ya identificada.
+1683816870: RX: <OK Accepted>
+1683816872: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683816872: RX: <OK>
+1683816872: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683816872: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683816872: RX: <REGISTERED>
+1683816872: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816872: COMMAND <cp ./client.? .trazas-5>
+1683816872: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816872: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h54\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816873: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816914: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816914: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816914: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816914: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816914: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816914: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816919: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816919: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816919: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816919: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816919: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816919: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816926: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816926: COMMAND <cp ./client.? .trazas-5>
+1683816926: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816926: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h54\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816927: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816928: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683816928: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683816928: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683816928: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        inet6 fe80::3bc2:6c92:2d68:c692  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3c0a:bf78:3c2b:c319  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 101  bytes 10414 (10.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 110  bytes 35661 (35.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 22055  bytes 32550062 (32.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3219  bytes 317452 (317.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 508  bytes 115585 (115.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 508  bytes 115585 (115.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683816928: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683816928: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683816928: 
+La máquina está ya identificada.
+1683816928: RX: <OK Accepted>
+1683816928: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683816928: RX: <OK>
+1683816928: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683816928: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683816928: RX: <REGISTERED>
+1683816928: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816928: COMMAND <cp ./client.? .trazas-5>
+1683816928: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816928: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h55\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816929: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816931: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816931: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816931: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816931: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816931: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816931: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816940: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816940: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816940: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683816940: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816940: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <877>.
+********************************************[0m
+1683816940: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683816940: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816940: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683816940: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683816940: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816940: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <62>.
+********************************************[0m
+1683816941: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816941: 
+-------------------------------------------------------
+Numero de procesos client (5) incorrecto. Debe ser (4)
+
+-------------------------------------------------------
+1683816941: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816941: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816965: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816965: COMMAND <cp ./client.? .trazas-5>
+1683816965: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816965: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h55\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816965: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816968: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683816968: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683816968: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683816968: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        inet6 fe80::3bc2:6c92:2d68:c692  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3c0a:bf78:3c2b:c319  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 173  bytes 15189 (15.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 182  bytes 69126 (69.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 22131  bytes 32560895 (32.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3296  bytes 357050 (357.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 625  bytes 161810 (161.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 625  bytes 161810 (161.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683816968: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683816968: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683816968: 
+La máquina está ya identificada.
+1683816968: RX: <OK Accepted>
+1683816968: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683816968: RX: <OK>
+1683816968: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683816968: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683816968: RX: <REGISTERED>
+1683816968: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816968: COMMAND <cp ./client.? .trazas-5>
+1683816968: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816968: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h56\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816969: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816977: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816977: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816977: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816977: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816977: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816977: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816984: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816984: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816984: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816984: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816984: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816984: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683816987: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816987: COMMAND <cp ./client.? .trazas-5>
+1683816987: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816987: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h56\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816988: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816990: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683816990: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683816990: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683816990: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1306
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        inet6 fe80::3bc2:6c92:2d68:c692  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::3c0a:bf78:3c2b:c319  prefixlen 126  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 249  bytes 20780 (20.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 259  bytes 103430 (103.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 22209  bytes 32572313 (32.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3374  bytes 397537 (397.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 673  bytes 186342 (186.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 673  bytes 186342 (186.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683816990: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683816990: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683816990: 
+La máquina está ya identificada.
+1683816990: RX: <OK Accepted>
+1683816990: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683816991: RX: <OK>
+1683816991: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683816991: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683816991: RX: <REGISTERED>
+1683816991: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683816991: COMMAND <cp ./client.? .trazas-5>
+1683816991: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683816991: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h56\n" | 	  ftp -n 2>&1 > /dev/null>
+1683816991: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683816998: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683816998: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683816998: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683816998: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683816998: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683816998: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817001: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817001: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817001: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817001: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817001: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817001: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817028: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817028: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817028: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817028: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817028: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817028: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817032: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817032: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817032: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817032: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817032: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817032: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817037: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817037: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817037: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817037: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817037: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817037: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817054: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817054: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817054: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817054: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817054: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817054: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817059: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817059: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817059: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817059: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817059: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817059: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817063: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817063: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817063: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817063: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817063: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817063: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817068: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817068: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817068: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817068: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683817068: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817068: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817074: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683817074: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817074: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817074: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817074: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <877>.
+********************************************[0m
+1683817074: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817074: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817074: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683817074: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817074: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817074: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <62>.
+********************************************[0m
+1683817075: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683817075: 
+-------------------------------------------------------
+Numero de procesos client (4) incorrecto. Debe ser (3)
+
+-------------------------------------------------------
+1683817075: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683817075: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817362: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817362: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817362: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683817362: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683817363: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817391: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817391: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817391: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683817391: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683817392: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817430: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817430: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817430: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683817430: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683817431: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817458: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817458: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817458: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683817458: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683817459: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817589: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817589: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817589: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683817589: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683817590: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817613: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817613: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817617: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683817617: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+1683817617: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817616: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683817617: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683817617: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817617: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683817617: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817617: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817744: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817744: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817748: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683817748: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+1683817748: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817747: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683817748: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683817748: 
+-------------------------------------------------------
+<== Mensaje (16 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817748: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683817748: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683817748: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817748: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683817773: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683817773: COMMAND <gcc client_tcp.c -o client_tcp>
+1683817777: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683817777: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+1683817777: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817776: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683817777: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683817777: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683817777: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683817777: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683817777: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683817777: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818066: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818066: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818070: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818070: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683818070: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818069: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818070: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818070: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818070: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818070: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818070: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818070: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818239: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818239: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818243: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818243: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+1683818243: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818242: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818243: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818243: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818243: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818243: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818243: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818243: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818330: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818330: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818334: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818334: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+Tx: user 78997795
+.1683818334: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818333: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818334: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818334: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818334: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818334: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818334: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818334: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818356: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818356: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818361: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818361: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683818361: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818360: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818361: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818390: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683818390: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818391: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818394: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818394: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818398: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818398: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795
+.1683818398: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818397: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818398: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818398: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818398: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818398: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818398: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818398: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818475: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818475: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818475: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683818475: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683818476: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818482: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818482: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818487: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818487: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795
+.RX:NOK
+y_init.1683818487: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818486: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818487: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818487: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818487: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818487: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818487: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818487: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683818592: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683818592: COMMAND <gcc client_tcp.c -o client_tcp>
+1683818596: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683818596: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683818596: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818595: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683818596: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683818596: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683818596: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683818596: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683818596: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683818596: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683819606: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683819606: COMMAND <gcc client_tcp.c -o client_tcp>
+1683819610: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683819610: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683819610: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819609: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683819610: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683819610: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819610: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819610: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683819610: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819610: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683819663: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683819663: COMMAND <gcc client_tcp.c -o client_tcp>
+1683819667: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683819667: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683819667: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819666: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683819667: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683819667: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819667: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819667: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683819667: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819667: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683819793: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683819793: COMMAND <gcc client_tcp.c -o client_tcp>
+1683819797: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683819797: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683819797: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819796: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683819797: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683819797: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819797: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819797: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683819797: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819797: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683819800: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683819800: COMMAND <cp ./client.? .trazas-5>
+1683819800: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683819800: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-16h56\n" | 	  ftp -n 2>&1 > /dev/null>
+1683819800: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683819802: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683819802: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683819802: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683819802: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1271
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 394  bytes 41071 (41.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 411  bytes 145429 (145.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 22656  bytes 32621272 (32.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3807  bytes 473999 (473.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 6362  bytes 3230843 (3.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6362  bytes 3230843 (3.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683819802: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683819802: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683819802: 
+La máquina está ya identificada.
+1683819802: RX: <OK Accepted>
+1683819802: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683819802: RX: <OK>
+1683819802: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683819802: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683819802: RX: <REGISTERED>
+1683819802: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683819802: COMMAND <cp ./client.? .trazas-5>
+1683819802: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683819802: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-17h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1683819803: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683819804: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683819804: COMMAND <gcc client_tcp.c -o client_tcp>
+1683819809: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683819809: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683819809: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819808: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683819809: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683819809: 
+-------------------------------------------------------
+<== Mensaje (14 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819809: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819809: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683819809: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819809: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683819953: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683819953: COMMAND <gcc client_tcp.c -o client_tcp>
+1683819957: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683819957: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795V
+
+RX:OK
+r 78997795V
+
+TX:get clave
+
+1683819957: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819956: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683819957: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683819957: 
+-------------------------------------------------------
+<== Mensaje (15 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819957: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <558>.
+********************************************[0m
+1683819957: 
+-------------------------------------------------------
+==> Mensaje (3 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819957: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819957: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683819957: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683819957: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683819957: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683819957: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820450: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683820450: COMMAND <gcc client_tcp.c -o client_tcp>
+1683820454: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683820454: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+1683820454: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820453: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683820454: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820483: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683820483: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683820484: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820521: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683820521: COMMAND <gcc client_tcp.c -o client_tcp>
+1683820522: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683820522: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683820523: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820533: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683820533: COMMAND <gcc client_tcp.c -o client_tcp>
+1683820537: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683820537: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795
+78997795V
+
+RX:NOK
+ 78997795
+78997795V
+
+TX:get clave
+
+1683820537: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820536: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683820537: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683820537: 
+-------------------------------------------------------
+<== Mensaje (24 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820537: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820537: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683820537: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820537: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820602: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683820602: COMMAND <gcc client_tcp.c -o client_tcp>
+1683820606: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683820606: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795V
+
+RX:OK
+r 78997795V
+
+TX:get clave
+
+1683820606: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820605: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+<== Mensaje (15 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820606: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <558>.
+********************************************[0m
+1683820606: 
+-------------------------------------------------------
+==> Mensaje (3 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820606: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820606: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683820607: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820683: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683820683: COMMAND <gcc client_tcp.c -o client_tcp>
+1683820687: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683820687: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795V
+
+RX:OK
+>.
+TX:get clave
+.
+RX:CLAVE:<235>
+.
+TX:<235>.
+1683820687: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820686: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+<== Mensaje (15 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <558>.
+********************************************[0m
+1683820687: 
+-------------------------------------------------------
+==> Mensaje (3 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <14> es <235>.
+********************************************[0m
+1683820687: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683820687: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <15> es <116>.
+********************************************[0m
+1683820687: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683820687: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1683820688: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683820715: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683820715: COMMAND <cp ./client.? .trazas-5>
+1683820715: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683820715: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-17h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1683820715: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683822823: COMMAND <cp ./monitor5 /tmp/.monitor5>
+1683822823: COMMAND <cp -f /tmp/.monitor5 ./monitor5>
+1683822823: COMMAND <uname -a >> .trazas-5/alumno-78997795V>
+Linux ubuntu-VirtualBox 5.19.0-41-generic #42~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 18 17:40:00 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+1683822823: COMMAND <ifconfig 2>&1 >> .trazas-5/alumno-78997795V>
+cscotun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1271
+        inet 10.254.46.39  netmask 255.255.192.0  destination 10.254.46.39
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 29240  bytes 16198519 (16.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 25978  bytes 3970582 (3.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::18aa:c19d:41a9:f62c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:27:0a:52  txqueuelen 1000  (Ethernet)
+        RX packets 67572  bytes 52279752 (52.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34295  bytes 6935199 (6.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 12406  bytes 6545355 (6.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12406  bytes 6545355 (6.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:9d:99:66  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1683822823: COMMAND <echo -n 'MACHINE-ID: ' >> .trazas-5/alumno-78997795V>
+MACHINE-ID: 1683822823: COMMAND <cat /etc/machine-id >> .trazas-5/alumno-78997795V>
+7f1701064e8a4843b24f065252a29a30
+1683822823: 
+La máquina está ya identificada.
+1683822823: RX: <OK Accepted>
+1683822824: TX: <CHECKPWD bmmNS3EF+5EHa->
+1683822824: RX: <OK>
+1683822824: 
+********************************************
+           INICIANDO SESION
+********************************************
+1683822824: TX: <UUID 06950050-8bef-4858-ab54-0266a2451736>
+1683822824: RX: <REGISTERED>
+1683822824: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683822824: COMMAND <cp ./client.? .trazas-5>
+1683822824: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683822824: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-18h33\n" | 	  ftp -n 2>&1 > /dev/null>
+1683822825: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
+1683822827: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683822827: COMMAND <gcc client_tcp.c -o client_tcp>
+1683822831: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683822831: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795V
+
+RX:OK
+�}.
+TX:get clave
+.
+RX:CLAVE:<235>
+.
+TX:<235>.
+1683822831: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822830: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683822831: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683822831: 
+-------------------------------------------------------
+<== Mensaje (15 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <558>.
+********************************************[0m
+1683822831: 
+-------------------------------------------------------
+==> Mensaje (3 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <14> es <235>.
+********************************************[0m
+1683822831: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822831: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1683822831: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822831: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683822847: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1683822847: COMMAND <gcc client_udp.c -o client_udp>
+1683822848: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_udp.c
+
+-------------------------------------------------------
+1683822848: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 6.
+
+*************************************************[0m
+1683822849: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683822878: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683822878: COMMAND <gcc client_tcp.c -o client_tcp>
+1683822878: 
+-------------------------------------------------------
+No COMPILA BIEN el fichero fuente client_tcp.c
+
+-------------------------------------------------------
+1683822878: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 5.
+
+*************************************************[0m
+1683822879: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683822903: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1683822903: COMMAND <gcc client_tcp.c -o client_tcp>
+1683822907: 
+-------------------------------------------------------
+Lanzamiento del programa client_tcp.
+
+-------------------------------------------------------
+1683822907: COMMAND <./client_tcp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+Conectando: 78997795V@localhost:3007.
+TX:user 78997795V
+
+RX:OK
+
+.
+TX:get clave
+.
+RX:CLAVE:<235>
+.
+TX:<235>.
+1683822907: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822906: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+<== Mensaje (15 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <558>.
+********************************************[0m
+1683822907: 
+-------------------------------------------------------
+==> Mensaje (3 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <14> es <235>.
+********************************************[0m
+1683822907: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822907: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <15> es <116>.
+********************************************[0m
+1683822907: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822907: 
+*************************************************
+:ok> CONTEXTO del ejercicio 5 preparado.
+*************************************************
+1683822908: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683822911: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1683822911: COMMAND <gcc client_udp.c -o client_udp>
+1683822915: 
+-------------------------------------------------------
+Lanzamiento del programa client_udp.
+
+-------------------------------------------------------
+1683822915: COMMAND <./client_udp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+TX:GET CLAVE 78997795V
+RX:
+TX:
+1683822915: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822914: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683822915: 
+-------------------------------------------------------
+<== Mensaje (19 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822915: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <16> es <9>.
+********************************************[0m
+1683822915: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822915: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822915: 
+-------------------------------------------------------
+==> Recibido mensaje con mal formato <999>. Contenido ().
+
+-------------------------------------------------------
+1683822915: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <18> es <207>.
+********************************************[0m
+1683822915: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822915: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1683822916: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683822932: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1683822932: COMMAND <gcc client_udp.c -o client_udp>
+1683822936: 
+-------------------------------------------------------
+Lanzamiento del programa client_udp.
+
+-------------------------------------------------------
+1683822936: COMMAND <./client_udp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+TX:GET CLAVE 78997795V
+RX:
+TX:
+1683822936: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822935: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683822936: 
+-------------------------------------------------------
+<== Mensaje (19 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822936: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <16> es <9>.
+********************************************[0m
+1683822936: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683822936: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683822936: 
+-------------------------------------------------------
+==> Recibido mensaje con mal formato <999>. Contenido ().
+
+-------------------------------------------------------
+1683822936: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <18> es <207>.
+********************************************[0m
+1683822936: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683822936: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1683822937: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823101: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1683823101: COMMAND <gcc client_udp.c -o client_udp>
+1683823105: 
+-------------------------------------------------------
+Lanzamiento del programa client_udp.
+
+-------------------------------------------------------
+1683823105: COMMAND <./client_udp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+TX:GET CLAVE 78997795V
+RX:
+TX:
+1683823105: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683823104: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683823105: 
+-------------------------------------------------------
+<== Mensaje (19 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823105: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <16> es <9>.
+********************************************[0m
+1683823105: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823105: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823105: 
+-------------------------------------------------------
+==> Recibido mensaje con mal formato <999>. Contenido ().
+
+-------------------------------------------------------
+1683823105: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <18> es <207>.
+********************************************[0m
+1683823105: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683823105: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1683823106: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823200: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 6.
+
+*************************************************
+
+
+1683823200: COMMAND <gcc client_udp.c -o client_udp>
+1683823205: 
+-------------------------------------------------------
+Lanzamiento del programa client_udp.
+
+-------------------------------------------------------
+1683823205: COMMAND <./client_udp 78997795V@localhost:3007 >> .trazas-5/alumno-78997795V>
+TX:GET CLAVE 78997795V
+RX:CLAVE:<842>
+
+TX:<842>
+1683823205: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683823203: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3007) en el proceso monitor.
+
+-------------------------------------------------------
+1683823205: 
+-------------------------------------------------------
+<== Mensaje (19 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823205: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <16> es <9>.
+********************************************[0m
+1683823205: 
+-------------------------------------------------------
+==> Mensaje (12 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823205: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823205: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <17> es <842>.
+********************************************[0m
+1683823205: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <18> es <207>.
+********************************************[0m
+1683823205: 
+-------------------------------------------------------
+Un proceso hijo de monitor ha finalizado
+
+-------------------------------------------------------
+1683823205: 
+*************************************************
+:ok> CONTEXTO del ejercicio 6 preparado.
+*************************************************
+1683823206: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823259: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1683823259: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1683823260: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683823260: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <458>.
+********************************************[0m
+1683823260: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823260: 
+-------------------------------------------------------
+==> Esperando 3 segundos a recibir mensaje.
+
+-------------------------------------------------------
+1683823260: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823260: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <791>.
+********************************************[0m
+1683823260: 
+-------------------------------------------------------
+Esperando 3 segundos el final de la comunicación
+
+-------------------------------------------------------
+1683823260: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823260: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <816>.
+********************************************[0m
+1683823260: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1683823260: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823272: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1683823272: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1683823302: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 3.
+
+*************************************************[0m
+1683823302: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823309: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1683823309: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1683823310: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1683823310: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <458>.
+********************************************[0m
+1683823310: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823310: 
+-------------------------------------------------------
+==> Esperando 3 segundos a recibir mensaje.
+
+-------------------------------------------------------
+1683823310: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823310: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <791>.
+********************************************[0m
+1683823310: 
+-------------------------------------------------------
+Esperando 3 segundos el final de la comunicación
+
+-------------------------------------------------------
+1683823310: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823310: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <816>.
+********************************************[0m
+1683823310: 
+*************************************************
+:ok> CONTEXTO del ejercicio 1 preparado.
+*************************************************
+1683823310: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823315: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683823315: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823315: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683823315: 
+-------------------------------------------------------
+Temporización para la comunicación agotado.
+
+-------------------------------------------------------
+1683823315: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683823315: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823321: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1683823321: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823321: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823321: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823321: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <877>.
+********************************************[0m
+1683823321: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823321: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823321: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823321: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823321: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823321: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <62>.
+********************************************[0m
+1683823322: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1683823322: 
+-------------------------------------------------------
+Numero de procesos client (4) incorrecto. Debe ser (3)
+
+-------------------------------------------------------
+1683823322: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1683823322: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823346: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1683823346: 
+-------------------------------------------------------
+==> Esperando (30 seg) una comunicación UDP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1683823347: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823347: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <804>.
+********************************************[0m
+1683823347: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823347: 
+-------------------------------------------------------
+<== Mensaje (4 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823347: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <145>.
+********************************************[0m
+1683823347: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <9> es <434>.
+********************************************[0m
+1683823347: 
+*************************************************
+:ok> CONTEXTO del ejercicio 3 preparado.
+*************************************************
+1683823347: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823351: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1683823351: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823354: 
+-------------------------------------------------------
+<== Recibido mensaje con un valor incorrecto.
+
+-------------------------------------------------------
+1683823354: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1683823354: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823358: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1683823358: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <10> es <775>.
+********************************************[0m
+1683823358: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <11> es <736>.
+********************************************[0m
+1683823358: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+-------------------------------------------------------
+<== Mensaje (10 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1683823358: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <12> es <941>.
+********************************************[0m
+1683823358: 
+*************************************************
+:ok> CONTEXTO del ejercicio 4 preparado.
+*************************************************
+1683823358: COMMAND <who >> .trazas-5/alumno-78997795V>
+ubuntu   tty2         2023-05-11 14:46 (tty2)
+1683823429: COMMAND <find . -type f -newer .signature -print 2>/dev/null | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1683823429: COMMAND <cp ./client.? .trazas-5>
+1683823429: COMMAND <tar zcf save_file-78997795V .trazas-5 > /dev/null>
+1683823429: COMMAND <echo "\nopen u017633.bi.ehu.es\nuser anonymous anonymous\npassive\ncd LAB2023/practica-5\nput save_file-78997795V 78997795V-11-5-18h33\n" | 	  ftp -n 2>&1 > /dev/null>
+1683823430: COMMAND <test -f .trazas-5/.clean_bck.tz && rm .trazas-5/.clean_bck.tz>
