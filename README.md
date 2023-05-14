@@ -313,14 +313,14 @@ semop(idSem,sembufs,2)
 
 ## CLIENT TCP
 
-### 1 - Declaracion
+### 1 - Declaración
 ```
 int sockfd;
 struct sockaddr_in serverAddr;
 char buffeer[128];
 ```
 
-### 2 - Configuracion serverAddr & sockfd
+### 2 - Configuración serverAddr & sockfd
 ```
 serverAddr.sin_family = AF_INET;
 serverAddr.sin_port = htons(PORT); //Host to nework
@@ -331,6 +331,31 @@ serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
 sockfd = socket(AF_INET,SOCK_STREAM,0);
 ```
 
-### 3 - 
+### 3 - Conexión
+```
+connect(sockfd,(struct sockaddr *) &serverAddr,sizeof(serverAddr))
+```
 
+### 4 - Envío de info
+```
+write(sockfdmbuffer,strlen(buffer))
+```
+### 5 - Leeer info
+```
+read(sockfd,buffer,sizeof(buffer))
+```
 
+## SERVIDOR TCP
+
+### 1 - Declaración
+int sockfd, clientfd;
+struct sockaddr_in serverAddr, clientAddr;
+char buffer[128];
+
+### 2 - Configuración serverAddr & sockfd
+
+### 3 - Conexión
+
+### 4 - Envío de info
+
+### 5 - Leeer info
