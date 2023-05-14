@@ -300,4 +300,28 @@ semop(idSem,&up0,1)
 
 semop(idSem,sembufs,2)
 ```
-## 
+## SOCKET TCP
+
+### IMPORTANTE
+
+**Hacer uso de **sprintf** para pasar de Int a String o de String a String mas completo
+**Hacer uso de **sscanf** para extraer un int de un String
+
+## CLIENT TCP
+
+### 1 - Declaracion
+```
+int sockfd;
+struct sockaddr_in serverAddr;
+char buffeer[128];
+```
+
+### 2 - Configuracion serverAddr
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
+```
+
+
+
