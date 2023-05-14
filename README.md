@@ -263,3 +263,17 @@ shmctl(idMem,IPC_RMID)
 ```
 
 ## Semaforos //TO DO
+
+### 1 - Definir operaciones
+```
+struct sembuf down0 = {0, -1, 0};
+struct sembuf up0 = {0, 1, 0};
+
+struct sembuf down1 = {1, -1, 0};
+struct sembuf up1 = {1, 1, 0};
+```
+
+OJO se pueden unir para hacer operaciones dobles
+```
+
+```
