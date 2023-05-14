@@ -384,28 +384,41 @@ read(clientfd,buffer,sizeof(buffer))
 ## CLIENT UDP
 
 ### 1 - Declaración
-
+```
 int sockfd;
 struct sockaddr_in serverAddr;
-
+```
 ### 2 - Configuración serverAddr & sockfd
-
+```
 sockfd = socket(AF_INET,SOCK_DGRAM,0);
-
+```
 ### 3 - Envío de info
+```
 
-
-
+```
 ### 4 - Leeer info
+```
 
+```
 ## SERVIDOR TCP
 
 ### 1 - Declaración
+```
 
+```
 ### 2 - Configuración serverAddr & sockfd
+```
 
+```
 ### 3 - Bindeo, escucha y aceptar conexion
+```
 
+```
 ### 4 - Envío de info
+```
 
+```
 ### 5 - Leeer info
+```
+
+```
