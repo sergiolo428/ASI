@@ -266,7 +266,7 @@ shmctl(idMem,IPC_RMID)
 
 ### 1 - Definir operaciones
 ```
-struct sembuf down0 = {0, -1, 0};
+struct sembuf down0 = {0, -1, 0}; // {Nº Sem, operacion, 0}
 struct sembuf up0 = {0, 1, 0};
 
 struct sembuf down1 = {1, -1, 0};
@@ -280,8 +280,24 @@ struct sembuf sembufs[2] = {up0,down1};
 
 ### 2 - Obtener identificadaor / Crear semaforo
 ```
+General: semget(CLAVE,Nº Sems,0666)
 idSem = semget(CLAVE,2,0666|IPC_CREAT) //Crear semaforo + obtener id
 idSem = semget(CLAVE,2,0666) // Obtener id
 ```
 
-### 3 - 
+### 3 - Inicializar semaforo
+```
+General: semctl(idSem,Nº de Sem,SETVAL,0/1)
+
+semctl(idSem,0,SETVAL,1) //Inicializacion semaforo 0 a 1
+```
+
+### 4 - Up & down
+```
+General: semop(idSem,Operador,Nº de operaciones (Longitud array)) //"&" si es solo uno, nada si es un array
+
+semop(idSem,&up0,1)
+
+semop(idSem,sembufs,2)
+```
+
