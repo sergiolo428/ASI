@@ -410,7 +410,9 @@ recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&serverAddr,&tam)
 
 ### 1 - Declaración
 ```
-
+int sockfd, clientfd;
+struct sockaddr_in serverAddr, clientAddr;
+char buffer[128];
 ```
 ### 2 - Configuración serverAddr & sockfd
 ```
@@ -428,9 +430,9 @@ bind(sockfd,(struct sockaddr *)&servereAddr,tam)
 ```
 ### 4 - Envío de info
 ```
-sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&serverAddr,tam)
+sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&clientAddr,tam)
 ```
 ### 5 - Leeer info
 ```
-recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&serverAddr,&tam)
+recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&clientAddr,&tam)
 ```
