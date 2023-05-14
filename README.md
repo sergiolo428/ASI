@@ -275,5 +275,13 @@ struct sembuf up1 = {1, 1, 0};
 
 OJO se pueden unir para hacer operaciones dobles
 ```
-
+struct sembuf sembufs[2] = {up0,down1};
 ```
+
+### 2 - Obtener identificadaor / Crear semaforo
+```
+idSem = semget(CLAVE,2,0666|IPC_CREAT) //Crear semaforo + obtener id
+idSem = semget(CLAVE,2,0666) // Obtener id
+```
+
+### 3 - 
