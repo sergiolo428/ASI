@@ -93,7 +93,7 @@ scanf("%d", &val);
 
 ## Practica 2 - Pipe, Fifo y Colas de mensajes
 
-## Pipe
+## PIPE
 
 ### 1 Creamos Pipe
 ```
@@ -120,7 +120,7 @@ read(fd[0], buffer, SIZE);
 **Es buena idea declarar el fifo bien como global, o si no, en el padre**
 
 
-## Fifo
+## FIFO
 
 ### 1 Creamos Fifo
 ```
@@ -185,7 +185,7 @@ msgctl(idCola, IPC_RMID, NULL); //Elimina Cola (Hacer donde se creo)
 ```
 
 ## Practica 3
-## Memoria compartida (Shared memory)
+## MEMORIA COMPARTIDA (Shared memory)
 
 ### 1 Acceso memoria compartida
 ```
@@ -262,7 +262,7 @@ shmdet(puntero)
 shmctl(idMem,IPC_RMID)
 ```
 
-## Semaforos //TO DO
+## SEMAFOROS
 
 ### 1 - Definir operaciones
 ```
@@ -300,4 +300,4 @@ semop(idSem,&up0,1)
 
 semop(idSem,sembufs,2)
 ```
-
+## 
