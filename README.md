@@ -390,17 +390,23 @@ struct sockaddr_in serverAddr;
 ```
 ### 2 - Configuración serverAddr & sockfd
 ```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
+
++
+
 sockfd = socket(AF_INET,SOCK_DGRAM,0);
 ```
 ### 3 - Envío de info
 ```
-
+sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&serverAddr,tam)
 ```
 ### 4 - Leeer info
 ```
-
+recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&serverAddr,&tam)
 ```
-## SERVIDOR TCP
+## SERVIDOR UDP
 
 ### 1 - Declaración
 ```
@@ -408,17 +414,23 @@ sockfd = socket(AF_INET,SOCK_DGRAM,0);
 ```
 ### 2 - Configuración serverAddr & sockfd
 ```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = INADDR_ANY; //Destino
 
++
+
+sockfd = socket(AF_INET,SOCK_DGRAM,0);
 ```
 ### 3 - Bindeo, escucha y aceptar conexion
 ```
-
+bind(sockfd,(struct sockaddr *)&servereAddr,tam)
 ```
 ### 4 - Envío de info
 ```
-
+sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&serverAddr,tam)
 ```
 ### 5 - Leeer info
 ```
-
+recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&serverAddr,&tam)
 ```
