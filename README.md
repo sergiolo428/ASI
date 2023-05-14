@@ -305,6 +305,7 @@ semop(idSem,sembufs,2)
 ### IMPORTANTE
 
 **Hacer uso de **sprintf** para pasar de Int a String o de String a String mas completo
+
 **Hacer uso de **sscanf** para extraer un int de un String
 
 ## CLIENT TCP
