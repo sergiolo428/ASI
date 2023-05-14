@@ -259,6 +259,7 @@ punteroMsg[0].c = dataMsg.c
 ### Cerrar y Borrar Memoria
 ```
 shmdet(puntero)
+
 shmctl(idMem,IPC_RMID)
 ```
 
@@ -281,7 +282,9 @@ struct sembuf sembufs[2] = {up0,down1};
 ### 2 - Obtener identificadaor / Crear semaforo
 ```
 General: semget(CLAVE,Nº Sems,0666)
+
 idSem = semget(CLAVE,2,0666|IPC_CREAT) //Crear semaforo + obtener id
+
 idSem = semget(CLAVE,2,0666) // Obtener id
 ```
 
@@ -317,12 +320,17 @@ struct sockaddr_in serverAddr;
 char buffeer[128];
 ```
 
-### 2 - Configuracion serverAddr
+### 2 - Configuracion serverAddr & sockfd
 ```
 serverAddr.sin_family = AF_INET;
 serverAddr.sin_port = htons(PORT); //Host to nework
 serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
+
++
+
+sockfd = socket(AF_INET,SOCK_STREAM,0);
 ```
 
+### 3 - 
 
 
