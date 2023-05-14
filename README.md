@@ -352,6 +352,8 @@ int sockfd, clientfd;
 struct sockaddr_in serverAddr, clientAddr;
 char buffer[128];
 
+int tam = sizeof(clientAddr)
+
 ### 2 - Configuración serverAddr & sockfd
 ```
 serverAddr.sin_family = AF_INET;
@@ -364,14 +366,15 @@ sockfd = socket(AF_INET,SOCK_STREAM,0);
 ```
 ### 3 - Bindeo, escucha y aceptar conexion
 ```
-bind(sockfd,(struct sockaddr *) &serverAddr,)
+bind(sockfd,(struct sockaddr *) &serverAddr,sizeof(serverAddr));
 listen(sockfd,3);
-clientfd = accept()
+clientfd = accept(sockfd,(struct sockaddr *), &tam);
 ```
 ### 4 - Envío de info
-
-write()
-
+```
+write(clientfd,buffer,strlen(buffer))
+```
 ### 5 - Leeer info
-
-read()
+```
+read(clientfd,buffer,sizeof(buffer))
+```
