@@ -353,9 +353,25 @@ struct sockaddr_in serverAddr, clientAddr;
 char buffer[128];
 
 ### 2 - Configuración serverAddr & sockfd
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = INADDR_ANY; //Destino
 
-### 3 - Conexión
++
 
+sockfd = socket(AF_INET,SOCK_STREAM,0);
+```
+### 3 - Bindeo, escucha y aceptar conexion
+```
+bind(sockfd,(struct sockaddr *) &serverAddr,)
+listen(sockfd,3);
+clientfd = accept()
+```
 ### 4 - Envío de info
 
+write()
+
 ### 5 - Leeer info
+
+read()
