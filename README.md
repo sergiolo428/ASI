@@ -436,3 +436,8 @@ sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&clientAddr,tam)
 ```
 recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&clientAddr,&tam)
 ```
+
+## ANOTACION EXTRA EXAMENES
+
+1. Usar memcpy(destino,origen,size) --> EJ: ```memcpy(&num,buffer_rx + 2*sizeof(char),sizeof(int))```
+2. Leer y escribir en intercambio de mensajes usando buffer_tx y buffer_rx --> EJ: <1><2> --> ``` buffer_tx[0]=1;buffeer_tx[1]=2s```
