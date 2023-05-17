@@ -93,7 +93,7 @@ scanf("%d", &val);
 
 ## Practica 2 - Pipe, Fifo y Colas de mensajes
 
-## Pipe
+## PIPE
 
 ### 1 Creamos Pipe
 ```
@@ -120,7 +120,7 @@ read(fd[0], buffer, SIZE);
 **Es buena idea declarar el fifo bien como global, o si no, en el padre**
 
 
-## Fifo
+## FIFO
 
 ### 1 Creamos Fifo
 ```
@@ -185,7 +185,7 @@ msgctl(idCola, IPC_RMID, NULL); //Elimina Cola (Hacer donde se creo)
 ```
 
 ## Practica 3
-## Memoria compartida (Shared memory)
+## MEMORIA COMPARTIDA (Shared memory)
 
 ### 1 Acceso memoria compartida
 ```
@@ -259,7 +259,185 @@ punteroMsg[0].c = dataMsg.c
 ### Cerrar y Borrar Memoria
 ```
 shmdet(puntero)
+
 shmctl(idMem,IPC_RMID)
 ```
 
-## Semaforos //TO DO
+## SEMAFOROS
+
+### 1 - Definir operaciones
+```
+struct sembuf down0 = {0, -1, 0}; // {Nº Sem, operacion, 0}
+struct sembuf up0 = {0, 1, 0};
+
+struct sembuf down1 = {1, -1, 0};
+struct sembuf up1 = {1, 1, 0};
+```
+
+OJO se pueden unir para hacer operaciones dobles
+```
+struct sembuf sembufs[2] = {up0,down1};
+```
+
+### 2 - Obtener identificadaor / Crear semaforo
+```
+General: semget(CLAVE,Nº Sems,0666)
+
+idSem = semget(CLAVE,2,0666|IPC_CREAT) //Crear semaforo + obtener id
+
+idSem = semget(CLAVE,2,0666) // Obtener id
+```
+
+### 3 - Inicializar semaforo
+```
+General: semctl(idSem,Nº de Sem,SETVAL,0/1)
+
+semctl(idSem,0,SETVAL,1) //Inicializacion semaforo 0 a 1
+```
+
+### 4 - Up & down
+```
+General: semop(idSem,Operador,Nº de operaciones (Longitud array)) //"&" si es solo uno, nada si es un array
+
+semop(idSem,&up0,1)
+
+semop(idSem,sembufs,2)
+```
+## SOCKET TCP
+
+### IMPORTANTE
+
+**Hacer uso de **sprintf** para pasar de Int a String o de String a String mas completo
+
+**Hacer uso de **sscanf** para extraer un int de un String
+
+## CLIENT TCP
+
+### 1 - Declaración
+```
+int sockfd;
+struct sockaddr_in serverAddr;
+char buffeer[128];
+```
+
+### 2 - Configuración serverAddr & sockfd
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
+
++
+
+sockfd = socket(AF_INET,SOCK_STREAM,0);
+```
+
+### 3 - Conexión
+```
+connect(sockfd,(struct sockaddr *) &serverAddr,sizeof(serverAddr))
+```
+
+### 4 - Envío de info
+```
+write(sockfdmbuffer,strlen(buffer))
+```
+### 5 - Leeer info
+```
+read(sockfd,buffer,sizeof(buffer))
+```
+
+## SERVIDOR TCP
+
+### 1 - Declaración
+```
+int sockfd, clientfd;
+struct sockaddr_in serverAddr, clientAddr;
+char buffer[128];
+
+int tam = sizeof(clientAddr)
+```
+### 2 - Configuración serverAddr & sockfd
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = INADDR_ANY; //Destino
+
++
+
+sockfd = socket(AF_INET,SOCK_STREAM,0);
+```
+### 3 - Bindeo, escucha y aceptar conexion
+```
+bind(sockfd,(struct sockaddr *) &serverAddr,sizeof(serverAddr));
+listen(sockfd,3);
+clientfd = accept(sockfd,(struct sockaddr *), &tam);
+```
+### 4 - Envío de info
+```
+write(clientfd,buffer,strlen(buffer))
+```
+### 5 - Leeer info
+```
+read(clientfd,buffer,sizeof(buffer))
+```
+
+## SOCKET UDP
+## CLIENT UDP
+
+### 1 - Declaración
+```
+int sockfd;
+struct sockaddr_in serverAddr;
+```
+### 2 - Configuración serverAddr & sockfd
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Destino
+
++
+
+sockfd = socket(AF_INET,SOCK_DGRAM,0);
+```
+### 3 - Envío de info
+```
+sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&serverAddr,tam)
+```
+### 4 - Leeer info
+```
+recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&serverAddr,&tam)
+```
+## SERVIDOR UDP
+
+### 1 - Declaración
+```
+int sockfd, clientfd;
+struct sockaddr_in serverAddr, clientAddr;
+char buffer[128];
+```
+### 2 - Configuración serverAddr & sockfd
+```
+serverAddr.sin_family = AF_INET;
+serverAddr.sin_port = htons(PORT); //Host to nework
+serverAddr.sin_addr.s_addr = INADDR_ANY; //Destino
+
++
+
+sockfd = socket(AF_INET,SOCK_DGRAM,0);
+```
+### 3 - Bindeo, escucha y aceptar conexion
+```
+bind(sockfd,(struct sockaddr *)&servereAddr,tam)
+```
+### 4 - Envío de info
+```
+sendto(sockfd,buffer,strlen(buffer),0,(struct sockaddr *)&clientAddr,tam)
+```
+### 5 - Leeer info
+```
+recvfromsockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&clientAddr,&tam)
+```
+
+## ANOTACION EXTRA EXAMENES
+
+1. Usar memcpy(destino,origen,size) --> EJ: ```memcpy(&num,buffer_rx + 2*sizeof(char),sizeof(int))```
+2. Leer y escribir en intercambio de mensajes usando buffer_tx y buffer_rx --> EJ: <1><2> --> ``` buffer_tx[0]=1;buffeer_tx[1]=2s```
